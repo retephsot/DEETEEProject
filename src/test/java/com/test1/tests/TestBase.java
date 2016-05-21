@@ -15,8 +15,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
-//input the correct "entry point" for "DefaultLandingPage" below
-import com.test1.pages.DefaultLandingPage;
+//input the correct "entry point class" below in this case "DefaultLandingPage"
+//import com.test1.pages.DefaultLandingPage;
 import com.test1.util.DataDrivenHelper;
 import com.test1.util.WebDriverHelper;
 
@@ -31,18 +31,6 @@ public class TestBase
 	//need to make Properties testConfig member variable below like this
 	protected Properties testConfig;
 	public String baseUrl;
-//	public String username;
-//	public String password;
-//	public String newpassword;
-//	public String email;
-//	public String firstname;
-//	public String lastname;
-//	public String RunGroup;
-//	public String UtilityCompany1;
-//	public String LMduration;
-//	public String LMnotes;
-//	public String LoadMgmtByUtil;
-//	public String LoadMgmtByRunGroup;
 	
 	
 	
