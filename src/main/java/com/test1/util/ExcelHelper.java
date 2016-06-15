@@ -16,7 +16,7 @@ public class ExcelHelper
 {
 	private String filePath; //file path of the excel file
 	private FileInputStream fis; // file input stream to read data based on excel file
-	private Workbook workbook; // excel workbook variable to work with excel feil
+	private Workbook workbook; // excel workbook variable to work with excel file
 	
 	// excel helper constructor which takes file path and initializes member variables
 	public ExcelHelper(String filePath)

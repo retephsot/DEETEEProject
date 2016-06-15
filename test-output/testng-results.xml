@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14020" started-at="2016-06-15T14:14:46Z" finished-at="2016-06-15T14:15:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14020" started-at="2016-06-15T14:14:46Z" finished-at="2016-06-15T14:15:00Z">
+      <class name="com.test1.tests.TestSuccessfulNavigationToResetPasswordPage">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulNavigationToResetPasswordPage@629f0666]" name="beforSuite" is-config="true" duration-ms="32" started-at="2016-06-15T10:14:46Z" finished-at="2016-06-15T10:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforSuite -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNavigationToResetPasswordPage@629f0666]" name="beforeMethod" is-config="true" duration-ms="5998" started-at="2016-06-15T10:14:46Z" finished-at="2016-06-15T10:14:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulNavigationToResetPasswordPage()[pri:0, instance:com.test1.tests.TestSuccessfulNavigationToResetPasswordPage@629f0666]" name="testSuccessfulNavigationToResetPasswordPage" duration-ms="6488" started-at="2016-06-15T10:14:52Z" finished-at="2016-06-15T10:14:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulNavigationToResetPasswordPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNavigationToResetPasswordPage@629f0666]" name="afterMethod" is-config="true" duration-ms="1517" started-at="2016-06-15T10:14:58Z" finished-at="2016-06-15T10:15:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test1.tests.TestSuccessfulNavigationToResetPasswordPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

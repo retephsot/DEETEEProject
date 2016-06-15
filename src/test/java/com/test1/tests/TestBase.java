@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -15,19 +14,19 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
-//input the correct "entry point class" below in this case "DefaultLandingPage"
 //import com.test1.pages.DefaultLandingPage;
+//input the correct "entry point class" below in this case "DefaultLandingPage"
+import com.test1.pages.LogInPage;
 import com.test1.util.DataDrivenHelper;
 import com.test1.util.WebDriverHelper;
 
 public class TestBase 
 {
 	
-	//Change Private WebDriver driver to protected so other test objects can inherit it
-	//private WebDriver driver;
+	
 	protected WebDriver driver;
 	//need to make the entry point a member variable below like this... enter the correct entry point below
-	protected DefaultLandingPage defaultlandingpage;
+	protected LogInPage loginpage;
 	//need to make Properties testConfig member variable below like this
 	protected Properties testConfig;
 	public String baseUrl;
@@ -66,22 +65,7 @@ public class TestBase
 		
 		// the below baseUrl value is coming from the Java PropertiesFile
 		baseUrl = testConfig.getProperty("baseUrl");
-//		username = "Jason.lee@soltech.net";
-//		password = "Password1";	
-//		newpassword = "Password2";
-//		email = "synhlee@yahoo.com";
-//		firstname = "Roger";
-//		lastname = "Moore";
-				
-//    the implicit wait and screen enlargement are taken care of in Java PropertiesFile		
-//		//Set implicityWait time to 45 seconds
-//		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
-//		
-//		//Enlarge the application screen
-//		Toolkit toolkit = Toolkit.getDefaultToolkit();
-//		int Width = (int) toolkit.getScreenSize().getWidth();
-//		int Height = (int)toolkit.getScreenSize().getHeight();
-//		driver.manage().window().setSize(new Dimension(1800,1600));
+
 		
 		driver.get(baseUrl);
 		
@@ -89,7 +73,7 @@ public class TestBase
 		//1 LogInPage logInPage = new LogInPage(driver);
 		//2 now LogInPage can be removed below because this has been added as protected above
 		//enter the correct entry point name below
-		defaultlandingpage = new DefaultLandingPage(driver);
+		loginpage = new LogInPage(driver);
 				
 	  }
 	
