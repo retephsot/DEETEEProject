@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -23,42 +24,53 @@ public class WebDriverHelper
 		if(browser.equalsIgnoreCase("Firefox"))
 		{
 			driver = new FirefoxDriver();
+			
+			String downloadPath = "C:\\testfolder\\SeleniumDownloads";
+			
+			//To change download option and save to different path
+			FirefoxProfile firefoxProfile = new FirefoxProfile();
+			firefoxProfile.setPreference("browser.download.folderList",2);
+			firefoxProfile.setPreference("browser.download.manager.showWhenStarting",false);
+			firefoxProfile.setPreference("browser.download.dir",downloadPath);
+			firefoxProfile.setPreference("browser.helperApps.neverAsk.saveToDisk",
+	"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,"
+	+ "image/jpeg,text/html,text/plain,application/msword,application/xml");
+			
+			
 		}
 		else if(browser.equalsIgnoreCase("Chrome"))
 		{
 			//original setup for google chrome
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\seleniumJar\\chromedriver_win32\\chromedriver.exe");
+//			System.setProperty("webdriver.chrome.driver",
+//					"C:\\seleniumJar\\chromedriver_win32\\chromedriver.exe");
 			
-			//to enable download using chrome
-//			System.setProperty("webdriver.chrome.driver", System.getProperty("C:\\seleniumJar\\chromedriver_win32")
-//					+ System.getProperty("file.separator")
-//					+ "BrowserDrivers"
-//					+ System.getProperty("file.separator")
-//					+ "chromedriver.exe");
-//			String downloadFilepath = "C:\\testfolder\\SeleniumDownloads";
-//
-//			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
-//			chromePrefs.put("profile.default_content_settings.popups", 0);
-//			chromePrefs.put("download.default_directory", downloadFilepath);
-//			chromePrefs.put("pdfjs.disabled", true);
-//
-//			//Save Chrome Opions
-//			ChromeOptions options = new ChromeOptions();
-//			HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
-//			options.setExperimentalOption("prefs", chromePrefs);
-//			options.addArguments("--test-type");
-//
-//
-//			DesiredCapabilities cap = DesiredCapabilities.chrome();
-//			cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
-//			cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-//			cap.setCapability(ChromeOptions.CAPABILITY, options); //to enable download using chrome
+			//to change download option and save to a different path
+			System.setProperty("webdriver.chrome.driver",
+		"C:\\seleniumJar\\chromedriver_win32\\chromedriver.exe");
+		
+			String downloadFilepath = "C:\\testfolder\\SeleniumDownloads";
+
+			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+			chromePrefs.put("profile.default_content_settings.popups", 0);
+			chromePrefs.put("download.default_directory", downloadFilepath);
+			chromePrefs.put("pdfjs.disabled", true);
+
+			//Save Chrome Options
+			ChromeOptions options = new ChromeOptions();
+			HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
+			options.setExperimentalOption("prefs", chromePrefs);
+			options.addArguments("--test-type");
+
+
+			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
+			cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			cap.setCapability(ChromeOptions.CAPABILITY, options); //to enable download using chrome
 
 			//original chrome setup
-			driver = new ChromeDriver();
+			//driver = new ChromeDriver();
 			
-			//driver = new ChromeDriver(cap);
+			driver = new ChromeDriver(cap);
 			
 		}
 		else if(browser.equalsIgnoreCase("IE"))
