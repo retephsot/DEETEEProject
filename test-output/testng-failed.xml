@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test1.tests.TestSuccessfulNavigationToResetPasswordPage">
+      <class name="com.test1.tests.TestSuccessfulLogIn">
         <methods>
+          <include name="testSuccessfulLogIn"/>
           <include name="beforSuite"/>
-          <include name="testSuccessfulNavigationToResetPasswordPage"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.test1.tests.TestSuccessfulNavigationToResetPasswordPage -->
+      </class> <!-- com.test1.tests.TestSuccessfulLogIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
