@@ -54,7 +54,7 @@ public class DefaultLoadingPage extends PageBase{
 		driver.findElement(By.xpath("//div[@class='main-content-area']/div[1]/div[3]/a")).click();
 		Thread.sleep(4000);
 		
-		//to handle windows based controls
+		//to handle windows based controls enable when using Firefox browser
 //		Robot robotObj = new Robot();
 //		
 //		robotObj.keyPress(KeyEvent.VK_DOWN);
@@ -70,6 +70,32 @@ public class DefaultLoadingPage extends PageBase{
 		
 		return new DefaultLoadingPage(driver);
 	}
+	
+	
+	public DefaultLoadingPage DownloadIssuesListFirefox() throws InterruptedException, AWTException
+	{
+				
+		//find the Download Issues List button and click
+		driver.findElement(By.xpath("//div[@class='main-content-area']/div[1]/div[3]/a")).click();
+		Thread.sleep(4000);
+		
+		//to handle windows based controls enable when using Firefox browser
+		Robot robotObj = new Robot();
+		
+		robotObj.keyPress(KeyEvent.VK_DOWN);
+		
+		Thread.sleep(2000);
+		
+		robotObj.keyPress(KeyEvent.VK_ENTER);
+		
+		Thread.sleep(2000);
+		
+		
+		
+		
+		return new DefaultLoadingPage(driver);
+	}
+	
 	
 	
 	public boolean isFileDownLoadSuccessful (String downloadPath, String filename) throws InterruptedException

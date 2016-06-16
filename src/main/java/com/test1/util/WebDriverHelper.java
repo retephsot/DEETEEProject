@@ -23,19 +23,39 @@ public class WebDriverHelper
 		
 		if(browser.equalsIgnoreCase("Firefox"))
 		{
-			driver = new FirefoxDriver();
+			
+			
+			//To change download option and save to different path
+			
+//			FirefoxProfile firefoxProfile = new FirefoxProfile();
+//			firefoxProfile.setPreference("browser.download.folderList",2);
+//			firefoxProfile.setPreference("browser.download.manager.showWhenStarting",false);
+//			firefoxProfile.setPreference("browser.download.dir",downloadPath);
+//			firefoxProfile.setPreference("browser.helperApps.neverAsk.saveToDisk",
+//	"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,"
+//	+ "image/jpeg,text/html,text/plain,application/msword,application/xml");
+			
+
+			FirefoxProfile firefoxProfile = new FirefoxProfile();
 			
 			String downloadPath = "C:\\testfolder\\SeleniumDownloads";
 			
-			//To change download option and save to different path
-			FirefoxProfile firefoxProfile = new FirefoxProfile();
-			firefoxProfile.setPreference("browser.download.folderList",2);
-			firefoxProfile.setPreference("browser.download.manager.showWhenStarting",false);
-			firefoxProfile.setPreference("browser.download.dir",downloadPath);
-			firefoxProfile.setPreference("browser.helperApps.neverAsk.saveToDisk",
-	"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,"
-	+ "image/jpeg,text/html,text/plain,application/msword,application/xml");
-			
+			firefoxProfile.setPreference("browser.download.folderList", 2);
+			firefoxProfile.setPreference("browser.download.dir", downloadPath);
+			firefoxProfile.setPreference("browser.download.manager.alertOnEXEOpen", false);
+			firefoxProfile.setPreference("browser.helperApps.neverAsk.saveToDisk", "application/msword, application/csv, application/ris, text/csv, image/png, application/pdf, text/html, text/plain, application/zip, application/x-zip, application/x-zip-compressed, application/download, application/octet-stream");
+			firefoxProfile.setPreference("browser.download.manager.showWhenStarting", false);
+			firefoxProfile.setPreference("browser.download.manager.focusWhenStarting", false);  
+			firefoxProfile.setPreference("browser.download.useDownloadDir", true);
+			firefoxProfile.setPreference("browser.helperApps.alwaysAsk.force", false);
+			firefoxProfile.setPreference("browser.download.manager.alertOnEXEOpen", false);
+			firefoxProfile.setPreference("browser.download.manager.closeWhenDone", true);
+			firefoxProfile.setPreference("browser.download.manager.showAlertOnComplete", false);
+			firefoxProfile.setPreference("browser.download.manager.useWindow", false);
+			firefoxProfile.setPreference("services.sync.prefs.sync.browser.download.manager.showWhenStarting", false);
+			firefoxProfile.setPreference("pdfjs.disabled", true);
+
+			driver = new FirefoxDriver(firefoxProfile);
 			
 		}
 		else if(browser.equalsIgnoreCase("Chrome"))
@@ -65,7 +85,7 @@ public class WebDriverHelper
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
 			cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			cap.setCapability(ChromeOptions.CAPABILITY, options); //to enable download using chrome
+			cap.setCapability(ChromeOptions.CAPABILITY, options); //to change chrome options
 
 			//original chrome setup
 			//driver = new ChromeDriver();
