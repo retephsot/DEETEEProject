@@ -2,28 +2,50 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14020" started-at="2016-06-15T14:14:46Z" finished-at="2016-06-15T14:15:00Z">
+  <suite name="Default suite" duration-ms="22712" started-at="2016-06-16T12:56:38Z" finished-at="2016-06-16T12:57:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14020" started-at="2016-06-15T14:14:46Z" finished-at="2016-06-15T14:15:00Z">
-      <class name="com.test1.tests.TestSuccessfulNavigationToResetPasswordPage">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulNavigationToResetPasswordPage@629f0666]" name="beforSuite" is-config="true" duration-ms="32" started-at="2016-06-15T10:14:46Z" finished-at="2016-06-15T10:14:46Z">
+    <test name="Default test" duration-ms="22712" started-at="2016-06-16T12:56:38Z" finished-at="2016-06-16T12:57:01Z">
+      <class name="com.test1.tests.TestSuccessfulDLIssuesFileFireFox">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulDLIssuesFileFireFox@64c64813]" name="beforSuite" is-config="true" duration-ms="11" started-at="2016-06-16T08:56:38Z" finished-at="2016-06-16T08:56:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNavigationToResetPasswordPage@629f0666]" name="beforeMethod" is-config="true" duration-ms="5998" started-at="2016-06-15T10:14:46Z" finished-at="2016-06-15T10:14:52Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulDLIssuesFileFireFox@64c64813]" name="beforeMethod" is-config="true" duration-ms="8482" started-at="2016-06-16T08:56:39Z" finished-at="2016-06-16T08:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulNavigationToResetPasswordPage()[pri:0, instance:com.test1.tests.TestSuccessfulNavigationToResetPasswordPage@629f0666]" name="testSuccessfulNavigationToResetPasswordPage" duration-ms="6488" started-at="2016-06-15T10:14:52Z" finished-at="2016-06-15T10:14:58Z">
+        <test-method status="PASS" signature="testSuccessfulIssuesFileDownLoadFiref(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulDLIssuesFileFireFox@64c64813]" name="testSuccessfulIssuesFileDownLoadFiref" duration-ms="13085" started-at="2016-06-16T08:56:48Z" data-provider="dataProvider" finished-at="2016-06-16T08:57:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richmond]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:\\testfolder\\SeleniumDownloads]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Richmond]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulNavigationToResetPasswordPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNavigationToResetPasswordPage@629f0666]" name="afterMethod" is-config="true" duration-ms="1517" started-at="2016-06-15T10:14:58Z" finished-at="2016-06-15T10:15:00Z">
+        </test-method> <!-- testSuccessfulIssuesFileDownLoadFiref -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulDLIssuesFileFireFox@64c64813]" name="afterMethod" is-config="true" duration-ms="487" started-at="2016-06-16T08:57:01Z" finished-at="2016-06-16T08:57:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.test1.tests.TestSuccessfulNavigationToResetPasswordPage -->
+      </class> <!-- com.test1.tests.TestSuccessfulDLIssuesFileFireFox -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

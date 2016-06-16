@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test1.tests.TestSuccessfulNavigationToResetPasswordPage">
+      <class name="com.test1.tests.TestSuccessfulDLIssuesFileFireFox">
         <methods>
           <include name="beforSuite"/>
-          <include name="testSuccessfulNavigationToResetPasswordPage"/>
+          <include name="afterMethod"/>
+          <include name="testSuccessfulIssuesFileDownLoadFiref" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.test1.tests.TestSuccessfulNavigationToResetPasswordPage -->
+      </class> <!-- com.test1.tests.TestSuccessfulDLIssuesFileFireFox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
