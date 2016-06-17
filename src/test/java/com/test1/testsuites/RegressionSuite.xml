@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RegressionSuite">
+	<test name= "DTSRegressionTest" > <!--  You can have multiple test nodes in a suite -->
+		<classes>
+			<class name="com.test1.tests.TestSuccessfulLogIn" /> <!--  You can have multiple class nodes in a test -->
+			<class name="com.test1.tests.TestSuccessfulLogOut" />
+		</classes>
+	</test>
+		<test name= "DTSRegressionTest2" > <!--  You can have multiple test nodes in a suite -->
+		<classes>
+			<class name="com.test1.tests.RTestChrome" /> <!--  You can have multiple class nodes in a test -->		
+		</classes>
+	</test>
+</suite>			

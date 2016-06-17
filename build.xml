@@ -1,0 +1,85 @@
+<!DOCTYPE project []>
+
+<project name="Using_Ant_To_Run_TestNG_Tests" default="usage" basedir=".">
+	
+<!-- ========== Initialize Property Variables =================================== -->
+<!-- Sets variables which can be used later. The value of a property is accessed via ${PropertyName}--> 
+<!-- Use <echo message="message to print" /> to print your message--> 
+
+	<property environment="env" />
+	
+	<property name="test.home" value="${basedir}" description="Specifies JAVA project location"/>
+	<property name="test.src" value="${test.home}/src" description="Specifies src folder location in the project"/>
+	<property name="test.jars" value="C:/seleniumJar" description="Specifies JARs location"/>
+	<property name="test.dest" value="${test.home}/ant_build" description="Specifies location to store .class compiled files"/>
+	<property name="test.reports" value="${test.home}/ant_reports" description="Specifies test reports output location"/>
+
+	<property name="test.suite" value="${test.src}/test/java/com/test1/testsuites/RegressionSuite.xml" description="Specifies TestNG test suite xml"/>
+	
+    <path id="test.classpath">
+	    <pathelement location="${test.dest}" />
+	    <fileset dir="${test.jars}">
+	    	<include name="*.jar"/>
+	    </fileset>
+    </path>
+
+	<!-- Define TestNG task to facilitate running using Ant -->
+	<taskdef resource="testngtasks" classpathref="test.classpath"/>
+	
+<!-- ========== Target Clean - to delete existing compiled .classes, test reports ======= -->
+	<target name="clean">
+		<echo message="Deleting Ant Build directory..." />
+		<delete dir="${test.dest}" /> 
+		<echo message="Deleting Ant Reports directory..." />
+		<delete dir="${test.reports}" /> 
+	</target>
+	
+<!-- ========== Target Compile - Compiles the JAVA code and generates .class files ======== -->
+	<target name="compile" depends="clean"> 
+		<echo message="Creating Ant Build directory..." />
+		<mkdir dir="${test.dest}" />
+		<echo message="Creating Ant Reports directory..." />
+		<mkdir dir="${test.reports}" />
+		<echo message="Compiling the JAVA code..." />
+		<javac srcdir="${test.src}" destdir="${test.dest}" classpathref="test.classpath"  verbose="false" debug="true"> </javac> 
+	</target>
+
+<!-- ========== Target Run - Run the TestNG Tests and Generate Reports ====================== -->
+	  <target name="run" depends="compile">
+	  	
+		<echo message="Starting the execution of tests..." />
+	  	
+	   	<testng classpathref="test.classpath"
+	  		outputdir="${test.reports}"
+	  		listeners = "org.testng.reporters.FailedReporter, org.testng.reporters.DotTestListener"
+	  		haltonfailure="false">
+	  		<classfileset dir="${test.dest}">
+				<!-- =========== Specify which tests to run =========== -->
+	  		 	<!-- <include name="**/*.class"  description="To run all the TestNG classes in the project"/> -->	  				  			
+	  			<include name="com/test1/tests/RTestChrome.class" /> 
+	  		<!--	<include name="com/test1/tests/ScheduleLMByUtilityNowTest.class" />  -->
+	  			
+	  		</classfileset>
+	  	</testng>
+	  </target>
+		
+<!-- ========== Target RunSuite - Run the TestNG Suite and Generate Reports ====================== -->
+		  <target name="runsuite" depends="compile">
+		  	
+			<echo message="Starting the execution of test suite..." />
+
+		  	<testng classpathref="test.classpath"
+	  				listeners = "org.testng.reporters.FailedReporter, org.testng.reporters.DotTestListener"
+		  	        outputDir="${test.reports}"
+		  	        haltOnfailure="false">
+		  	   <!-- =========== Specify which test suites to run in test.suite property =========== -->
+		  	   <xmlfileset  file="${test.suite}"/>
+		  	</testng>
+		  </target>
+	
+<!-- ========== Target Usage - Default target to run when just Ant command alone is used =========== -->
+		  <target name="usage">
+			<echo message="Use command: Ant run or Ant runsuite to execute the tests" />
+		  </target>
+	
+</project>

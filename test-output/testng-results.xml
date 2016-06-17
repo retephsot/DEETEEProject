@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19340" started-at="2016-06-17T00:09:46Z" finished-at="2016-06-17T00:10:05Z">
+  <suite name="Default suite" duration-ms="23929" started-at="2016-06-17T19:23:56Z" finished-at="2016-06-17T19:24:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19340" started-at="2016-06-17T00:09:46Z" finished-at="2016-06-17T00:10:05Z">
+    <test name="Default test" duration-ms="23929" started-at="2016-06-17T19:23:56Z" finished-at="2016-06-17T19:24:20Z">
       <class name="com.test1.tests.TestSuccessfulDLSumSheetFirefox">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="beforSuite" is-config="true" duration-ms="16" started-at="2016-06-16T20:09:46Z" finished-at="2016-06-16T20:09:46Z">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="beforSuite" is-config="true" duration-ms="11" started-at="2016-06-17T15:23:56Z" finished-at="2016-06-17T15:23:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="beforeMethod" is-config="true" duration-ms="4423" started-at="2016-06-16T20:09:46Z" finished-at="2016-06-16T20:09:51Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="beforeMethod" is-config="true" duration-ms="8581" started-at="2016-06-17T15:23:57Z" finished-at="2016-06-17T15:24:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulSumSheetDownLoadFiref(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="testSuccessfulSumSheetDownLoadFiref" duration-ms="13229" started-at="2016-06-16T20:09:51Z" data-provider="dataProvider" finished-at="2016-06-16T20:10:04Z">
+        <test-method status="PASS" signature="testSuccessfulSumSheetDownLoadFiref(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="testSuccessfulSumSheetDownLoadFiref" duration-ms="14158" started-at="2016-06-17T15:24:05Z" data-provider="dataProvider" finished-at="2016-06-17T15:24:20Z">
           <params>
             <param index="0">
               <value>
@@ -39,14 +39,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[Test Attchment.pdf]]>
+                <![CDATA[Richmond Document 123.docx]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulSumSheetDownLoadFiref -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="afterMethod" is-config="true" duration-ms="1118" started-at="2016-06-16T20:10:04Z" finished-at="2016-06-16T20:10:05Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="afterMethod" is-config="true" duration-ms="580" started-at="2016-06-17T15:24:20Z" finished-at="2016-06-17T15:24:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
