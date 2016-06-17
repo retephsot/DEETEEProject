@@ -116,6 +116,26 @@ public class DefaultLoadingPage extends PageBase{
 		return testresults;
 	}
 	
+	public DefaultLoadingPage SelectfileInputMP(String mp) throws InterruptedException, AWTException
+	{
+				
+		//find the MP Search field and enter MP
+		driver.findElement(By.id("main-search")).sendKeys(mp);
+		Thread.sleep(3000);
+						
+		return new DefaultLoadingPage(driver);
+	}
+	
+	
+	public FileViewPage clickActionLink() throws InterruptedException
+	{
+		
+		//find the Action button and click
+		driver.findElement(By.cssSelector("span.fa.fa-file-text")).click();
+
+		
+		return new FileViewPage(driver);
+	}
 	
 
 }
