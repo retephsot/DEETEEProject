@@ -40,13 +40,5 @@ public class TestSuccessfulDLIssuesFile extends TestBase
 	 
   }
   
- 
-
-  //AfterMethod is not inherited from TestBase class
-//  @AfterMethod
-//  public void afterMethod() 
-//  {
-//	  driver.close();
-//  }
 
 }

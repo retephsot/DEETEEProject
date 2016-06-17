@@ -23,7 +23,7 @@ public class FileViewPage extends PageBase{
 		
 		//To scroll down until Test Attachment is visible
 		JavascriptExecutor je = (JavascriptExecutor) driver;
-		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li[2]/div")));
+		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li[3]/a")));
 		
 		Thread.sleep(3000);
 		
@@ -35,7 +35,7 @@ public class FileViewPage extends PageBase{
 		//robotObj.mouseWheel(-100);
 		
 		//find the Test Attachment link and click
-		driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li[2]/a")).click();
+		driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li[3]/a")).click();
 		
 		Thread.sleep(3000);
 		
@@ -58,7 +58,7 @@ public class FileViewPage extends PageBase{
 		
 		//To scroll down until Test Attachment is visible
 		JavascriptExecutor je = (JavascriptExecutor) driver;
-		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li[2]/div")));
+		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li/a")));
 		
 		Thread.sleep(3000);
 		
@@ -69,7 +69,7 @@ public class FileViewPage extends PageBase{
 		//robotObj.mouseWheel(-100);
 		
 		//find the Test Attachment link and click
-		driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li[2]/a")).click();
+		driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li/a")).click();
 				
 		Thread.sleep(2000);
 			

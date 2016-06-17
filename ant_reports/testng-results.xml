@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Ant suite" duration-ms="72864" started-at="2016-06-17T12:28:08Z" finished-at="2016-06-17T12:29:21Z">
+    <groups>
+    </groups>
+    <test name="Ant test" duration-ms="72864" started-at="2016-06-17T12:28:08Z" finished-at="2016-06-17T12:29:21Z">
+      <class name="com.test1.tests.RTestChrome">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforSuite" is-config="true" duration-ms="23" started-at="2016-06-17T08:28:08Z" finished-at="2016-06-17T08:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforSuite -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforeMethod" is-config="true" duration-ms="6584" started-at="2016-06-17T08:28:09Z" finished-at="2016-06-17T08:28:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="testSuccessfulLogIn" duration-ms="12933" started-at="2016-06-17T08:28:16Z" data-provider="dataProvider" finished-at="2016-06-17T08:28:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richmond]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="afterMethod" is-config="true" duration-ms="1544" started-at="2016-06-17T08:28:29Z" finished-at="2016-06-17T08:28:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforeMethod" is-config="true" duration-ms="4472" started-at="2016-06-17T08:28:30Z" finished-at="2016-06-17T08:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogOut(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="testSuccessfulLogOut" duration-ms="10235" started-at="2016-06-17T08:28:35Z" data-provider="dataProvider" finished-at="2016-06-17T08:28:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richmond]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogOut -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="afterMethod" is-config="true" duration-ms="1315" started-at="2016-06-17T08:28:45Z" finished-at="2016-06-17T08:28:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforeMethod" is-config="true" duration-ms="4343" started-at="2016-06-17T08:28:46Z" finished-at="2016-06-17T08:28:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulIssuesFileDownLoad(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="testSuccessfulIssuesFileDownLoad" duration-ms="7876" started-at="2016-06-17T08:28:51Z" data-provider="dataProvider" finished-at="2016-06-17T08:28:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richmond]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:\\testfolder\\SeleniumDownloads]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Richmond County.docx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulIssuesFileDownLoad -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="afterMethod" is-config="true" duration-ms="1688" started-at="2016-06-17T08:28:59Z" finished-at="2016-06-17T08:29:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforeMethod" is-config="true" duration-ms="5735" started-at="2016-06-17T08:29:00Z" finished-at="2016-06-17T08:29:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulSumSheetDownLoadFiref(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="testSuccessfulSumSheetDownLoadFiref" duration-ms="13887" started-at="2016-06-17T08:29:06Z" data-provider="dataProvider" finished-at="2016-06-17T08:29:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richmond]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[051-0-176-00-0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[C:\\testfolder\\SeleniumDownloads]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Attchment.pdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulSumSheetDownLoadFiref -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="afterMethod" is-config="true" duration-ms="1334" started-at="2016-06-17T08:29:20Z" finished-at="2016-06-17T08:29:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test1.tests.RTestChrome -->
+    </test> <!-- Ant test -->
+  </suite> <!-- Ant suite -->
+</testng-results>
