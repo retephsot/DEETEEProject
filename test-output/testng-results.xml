@@ -1,56 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23929" started-at="2016-06-17T19:23:56Z" finished-at="2016-06-17T19:24:20Z">
+  <suite name="Default suite" duration-ms="46482" started-at="2016-06-22T15:16:57Z" finished-at="2016-06-22T15:17:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23929" started-at="2016-06-17T19:23:56Z" finished-at="2016-06-17T19:24:20Z">
-      <class name="com.test1.tests.TestSuccessfulDLSumSheetFirefox">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="beforSuite" is-config="true" duration-ms="11" started-at="2016-06-17T15:23:56Z" finished-at="2016-06-17T15:23:56Z">
+    <test name="Default test" duration-ms="46482" started-at="2016-06-22T15:16:57Z" finished-at="2016-06-22T15:17:44Z">
+      <class name="com.test1.tests.TestSuccessfulAdminAddAttachment">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@64c64813]" name="beforSuite" is-config="true" duration-ms="11" started-at="2016-06-22T11:16:57Z" finished-at="2016-06-22T11:16:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="beforeMethod" is-config="true" duration-ms="8581" started-at="2016-06-17T15:23:57Z" finished-at="2016-06-17T15:24:05Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@64c64813]" name="beforeMethod" is-config="true" duration-ms="5035" started-at="2016-06-22T11:16:58Z" finished-at="2016-06-22T11:17:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulSumSheetDownLoadFiref(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="testSuccessfulSumSheetDownLoadFiref" duration-ms="14158" started-at="2016-06-17T15:24:05Z" data-provider="dataProvider" finished-at="2016-06-17T15:24:20Z">
+        <test-method status="FAIL" signature="testSuccessfulAdminAddAttachment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@64c64813]" name="testSuccessfulAdminAddAttachment" duration-ms="39624" started-at="2016-06-22T11:17:03Z" data-provider="dataProvider" finished-at="2016-06-22T11:17:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Richmond]]>
+                <![CDATA[Richmond County]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[123456]]>
+                <![CDATA[Jason Lee]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[051-0-176-00-0]]>
+                <![CDATA[rese7]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[C:\\testfolder\\SeleniumDownloads]]>
+                <![CDATA[152-3-182-00-0]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Richmond Document 123.docx]]>
+                <![CDATA[addingAttachment]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[C:\\testfolder\\]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Bap1.JPEG]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Summary Sheet download was not successful for 152-3-182-00-0 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Summary Sheet download was not successful for 152-3-182-00-0 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.test1.tests.TestSuccessfulAdminAddAttachment.testSuccessfulAdminAddAttachment(TestSuccessfulAdminAddAttachment.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulSumSheetDownLoadFiref -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulDLSumSheetFirefox@64c64813]" name="afterMethod" is-config="true" duration-ms="580" started-at="2016-06-17T15:24:20Z" finished-at="2016-06-17T15:24:20Z">
+        </test-method> <!-- testSuccessfulAdminAddAttachment -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@64c64813]" name="afterMethod" is-config="true" duration-ms="1196" started-at="2016-06-22T11:17:42Z" finished-at="2016-06-22T11:17:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.test1.tests.TestSuccessfulDLSumSheetFirefox -->
+      </class> <!-- com.test1.tests.TestSuccessfulAdminAddAttachment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

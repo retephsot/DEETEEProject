@@ -31,6 +31,32 @@ public class LogInPage extends PageBase{
 		
 	}
 	
+	public FileManagerPage loginAsAdmin(String username, String password) throws InterruptedException
+	{
+		
+		//remove trailing zero from password		
+		//password = password.replaceAll("\\.0*$", "");
+		
+		
+		//Find email field and enter userID
+		driver.findElement(By.id("UserName")).sendKeys(username);
+		Thread.sleep(1000);
+		
+		// Find password field clear it and enter password
+		driver.findElement(By.id("Password")).clear();
+		Thread.sleep(1000);
+		driver.findElement(By.id("Password")).sendKeys(password);
+		Thread.sleep(1000);
+	
+		//Find Submit button and click on it
+		driver.findElement(By.xpath("//*[@id='login-box']/div/div[2]/form/div/input")).click();
+		Thread.sleep(2000);
+		
+		return new FileManagerPage(driver);
+		
+	}
+	
+	
 	public boolean isLogOutSuccessful () throws InterruptedException
 	{
 		String expectedword = "Login";
