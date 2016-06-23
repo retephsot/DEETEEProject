@@ -82,16 +82,15 @@ public class DefaultLoadingPage extends PageBase{
 		//to handle windows based controls enable when using Firefox browser
 		Robot robotObj = new Robot();
 		
+		//to press down key and then release
 		robotObj.keyPress(KeyEvent.VK_DOWN);
-		
+		robotObj.keyRelease(KeyEvent.VK_DOWN);
 		Thread.sleep(2000);
 		
+		//to press Enter key then release
 		robotObj.keyPress(KeyEvent.VK_ENTER);
-		
-		Thread.sleep(2000);
-		
-		
-		
+		robotObj.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);		
 		
 		return new DefaultLoadingPage(driver);
 	}

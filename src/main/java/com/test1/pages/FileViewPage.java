@@ -43,10 +43,11 @@ public class FileViewPage extends PageBase{
 //		Robot robotObj = new Robot();
 //			
 //		robotObj.keyPress(KeyEvent.VK_DOWN);
-//		
+//		robotObj.keyRelease(KeyEvent.VK_DOWN);
 //		Thread.sleep(2000);
 //		
 //		robotObj.keyPress(KeyEvent.VK_ENTER);
+//		robotObj.keyRelease(KeyEvent.VK_ENTER);
 //		
 //		Thread.sleep(2000);
 			
