@@ -56,4 +56,16 @@ public class FileManagerPage extends PageBase{
 		return new FileEditPage(driver);
 	}
 	
+	public ManageUsersPage ClickManageUsersLink() throws InterruptedException, AWTException
+	{
+				
+		//find the Manage Users Link and click // css=[ui-sref-opts='{inherit: false}'][ui-sref='user-manager']
+		driver.findElement(By.cssSelector("[ui-sref='user-manager']")).click();
+		Thread.sleep(3000);
+			
+		return new ManageUsersPage(driver);
+	}
+	
+	
+	
 }

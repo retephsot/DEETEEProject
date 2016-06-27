@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class FileEditPage extends PageBase{
 	
@@ -22,6 +23,8 @@ public class FileEditPage extends PageBase{
 		
 		//find the Edit button and click
 		driver.findElement(By.cssSelector("[ng-click='state.editFile()']")).click();
+		Thread.sleep(1000);
+		
 		//System.out.println("printing out filetitle, documentpath and filename " + filetitle + documentpath + filename);
 		//find the add attachment link and click
 		driver.findElement(By.cssSelector("span.btn-text")).click();
@@ -29,47 +32,74 @@ public class FileEditPage extends PageBase{
 		Thread.sleep(2000);
 		
 		//find the file title field and enter title
-		driver.findElement(By.xpath("//div[@id='add-dif-modal']/div[2]/div[2]/div[1]/div/input")).sendKeys(filetitle);
+		driver.findElement(By.xpath("//div[@class='modal-content-area']/form/div/div/input")).sendKeys(filetitle);
 		Thread.sleep(2000);
 		
 		//attach the document - send the path and filename to the upload file button    (//div[@class='file-field clr']/div)
-		driver.findElement(By.xpath("//div[@id='add-dif-modal']/div[2]/div[2]/div[2]/div/div/div[1]/input")).sendKeys(documentpath + filename);
+		driver.findElement(By.cssSelector("[ng-model='ctrl.model.file']")).sendKeys(documentpath + filename);
 		
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		//is the add attachment button enabled?  print out true or false
 		System.out.println("is the add attachment button enabled? " + (driver.findElement
-				(By.cssSelector("button.right.button.btn.green-btn")).isEnabled()) );
+				(By.cssSelector("submit.right.button.btn.green-btn")).isEnabled()) );
 		
 		Thread.sleep(1000);
 		
-		//click the add attachment button		
-		//driver.findElement(By.cssSelector("button.right.button.btn.green-btn")).sendKeys(Keys.ENTER);
-		//Thread.sleep(3000);
-		
-		//Robot Class to use keyboard functionality 
-		Robot robotObj = new Robot();
-		
-		//press down Tab key then release two times
-		robotObj.keyPress(KeyEvent.VK_TAB);
-		Thread.sleep(1000);
-		robotObj.keyRelease(KeyEvent.VK_TAB);
-		Thread.sleep(1000);
-		robotObj.keyPress(KeyEvent.VK_TAB);
-		Thread.sleep(1000);
-		robotObj.keyRelease(KeyEvent.VK_TAB);
-		Thread.sleep(1000);
-		
-		//press down Space key then release 
-		robotObj.keyPress(KeyEvent.VK_SPACE);
-		robotObj.keyRelease(KeyEvent.VK_SPACE);
-		Thread.sleep(1000);
-		//press down Enter Key then release
-		robotObj.keyPress(KeyEvent.VK_ENTER);
-		robotObj.keyRelease(KeyEvent.VK_ENTER);
-		
+		//click the add attachment button	
+		driver.findElement(By.cssSelector("submit.right.button.btn.green-btn")).click();
 		Thread.sleep(5000);
+	
+		
+		//click and hold the add attachment button
+//		Actions action = new Actions(driver);
+//	    action.clickAndHold(driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']"))).build().perform();
+//	    Thread.sleep(2000);
+//	    	    	    
+//	    //to release the button press
+//	    action.moveToElement(driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']"))).release();
+//	    Thread.sleep(6000);
+	    
+	    //mouse hover over then click
+//	    Actions hover=new Actions(driver);
+//	    hover.moveToElement(driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']")));
+//	    Thread.sleep(2000);
+//	    driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']")).click();
+//	    
+//	    Thread.sleep(3000);
+	    
+//		WebElement element = driver.findElement(By.xpath("//div[@class='modal-content-area']/div[2]/div[3]/button"));
+//		element.click();
+//		Thread.sleep(3000);
+		
+		
+//		driver.findElement(By.cssSelector("button.right.button.btn.green-btn")).click();
+//		Thread.sleep(3000);
+//		
+		
+		//Robot Class to use keyboard functionality *************
+//		Robot robotObj = new Robot();
+//		
+//		//press down Tab key then release two times
+//		robotObj.keyPress(KeyEvent.VK_TAB);
+//		robotObj.keyRelease(KeyEvent.VK_TAB);
+//		Thread.sleep(2000);
+//		robotObj.keyPress(KeyEvent.VK_TAB);
+//		robotObj.keyRelease(KeyEvent.VK_TAB);
+//		Thread.sleep(2000);
+//		robotObj.keyPress(KeyEvent.VK_TAB);
+//		robotObj.keyRelease(KeyEvent.VK_TAB);
+//		Thread.sleep(2000);
+//
+//		//press down Space key then release 
+//		robotObj.keyPress(KeyEvent.VK_SPACE);
+//		Thread.sleep(3000);
+//		
+//		robotObj.keyRelease(KeyEvent.VK_SPACE);
+//
+//		Thread.sleep(3000);
+	    
 		driver.navigate().refresh();
 		Thread.sleep(3000);
 		

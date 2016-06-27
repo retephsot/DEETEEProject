@@ -10,6 +10,6 @@
 	<classpathentry kind="lib" path="C:/seleniumJar/poi-ooxml-schemas-3.13-20150929.jar"/>
 	<classpathentry kind="lib" path="C:/seleniumJar/poi-scratchpad-3.13-20150929.jar"/>
 	<classpathentry kind="lib" path="C:/seleniumJar/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="C:/seleniumJar/selenium-server-standalone-2.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/selenium-server-standalone-2.53.0.jar" sourcepath="C:/seleniumJar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
