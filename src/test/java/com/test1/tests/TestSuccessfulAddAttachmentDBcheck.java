@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import java.awt.AWTException;
 import java.awt.Toolkit;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Dimension;
@@ -20,13 +21,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 
-public class TestSuccessfulAdminAddAttachment extends TestBase
+public class TestSuccessfulAddAttachmentDBcheck extends TestBase
 
 {
 
   @Test (dataProvider = "dataProvider")
-  public void testSuccessfulAdminAddAttachment(String client, String username, String password, String mp, String filetitle, 
-		  String documentpath, String filename) throws InterruptedException, IOException, AWTException 
+  public void testSuccessfulAddAttachmentDBcheck(String client, String username, String password, String mp, String filetitle, 
+		  String documentpath, String filename) throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
   {
 	
 	  
@@ -34,7 +35,7 @@ public class TestSuccessfulAdminAddAttachment extends TestBase
 								  .SearchClient(client)
 								  .clickMapParcelLink(mp)
 								  .addAttachment(filetitle, documentpath, filename)
-								  .isAddAttachmentSuccessful(filetitle); 
+								  .isAddAttachmentSuccessfulCheckDB(filetitle, filename); 
   
 	 System.out.println(testResult);	
 	 
