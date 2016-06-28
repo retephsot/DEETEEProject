@@ -1,86 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36064" started-at="2016-06-27T17:56:19Z" finished-at="2016-06-27T17:56:55Z">
+  <suite name="Default suite" duration-ms="104547" started-at="2016-06-28T17:03:08Z" finished-at="2016-06-28T17:04:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36064" started-at="2016-06-27T17:56:19Z" finished-at="2016-06-27T17:56:55Z">
-      <class name="com.test1.tests.TestSuccessfulNewUserCreation">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulNewUserCreation@64c64813]" name="beforSuite" is-config="true" duration-ms="11" started-at="2016-06-27T13:56:19Z" finished-at="2016-06-27T13:56:19Z">
+    <test name="Default test" duration-ms="104547" started-at="2016-06-28T17:03:08Z" finished-at="2016-06-28T17:04:53Z">
+      <class name="com.test1.tests.TestSuccessfulAdminAddAttachment">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@483bf400]" name="beforSuite" is-config="true" duration-ms="13" started-at="2016-06-28T13:03:08Z" finished-at="2016-06-28T13:03:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNewUserCreation@64c64813]" name="beforeMethod" is-config="true" duration-ms="4784" started-at="2016-06-27T13:56:20Z" finished-at="2016-06-27T13:56:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@483bf400]" name="beforeMethod" is-config="true" duration-ms="4348" started-at="2016-06-28T13:03:09Z" finished-at="2016-06-28T13:03:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulNewUserCreate(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulNewUserCreation@64c64813]" name="testSuccessfulNewUserCreate" duration-ms="29487" started-at="2016-06-27T13:56:24Z" data-provider="dataProvider" finished-at="2016-06-27T13:56:54Z">
+        <test-method status="PASS" signature="testSuccessfulAdminAddAttachment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@483bf400]" name="testSuccessfulAdminAddAttachment" duration-ms="46002" started-at="2016-06-28T13:03:13Z" data-provider="dataProvider" finished-at="2016-06-28T13:03:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Jason Lee]]>
+                <![CDATA[City of Decatur 2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password1]]>
+                <![CDATA[Jason Lee]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[NewClientUser]]>
+                <![CDATA[password1]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Active]]>
+                <![CDATA[88-88888-88]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Client]]>
+                <![CDATA[addingDocument]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[770.330.1111]]>
+                <![CDATA[C:\\testfolder\\]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[newclient@user2.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[clientuser1]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[clientuser1]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[C:\\testfolder\\]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[toshiya3.jpg]]>
+                <![CDATA[TestCertInput1.xlsx]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulNewUserCreate -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNewUserCreation@64c64813]" name="afterMethod" is-config="true" duration-ms="1118" started-at="2016-06-27T13:56:54Z" finished-at="2016-06-27T13:56:55Z">
+        </test-method> <!-- testSuccessfulAdminAddAttachment -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@483bf400]" name="afterMethod" is-config="true" duration-ms="1074" started-at="2016-06-28T13:03:59Z" finished-at="2016-06-28T13:04:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.test1.tests.TestSuccessfulNewUserCreation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@483bf400]" name="beforeMethod" is-config="true" duration-ms="5216" started-at="2016-06-28T13:04:00Z" finished-at="2016-06-28T13:04:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulAdminAddAttachment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@483bf400]" name="testSuccessfulAdminAddAttachment" duration-ms="46343" started-at="2016-06-28T13:04:06Z" data-provider="dataProvider" finished-at="2016-06-28T13:04:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[City of Decatur 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jason Lee]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[88-88888-88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[addingAttachment]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[C:\\testfolder\\]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[rock1.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulAdminAddAttachment -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAdminAddAttachment@483bf400]" name="afterMethod" is-config="true" duration-ms="934" started-at="2016-06-28T13:04:52Z" finished-at="2016-06-28T13:04:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test1.tests.TestSuccessfulAdminAddAttachment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -23,11 +23,11 @@ public class FileEditPage extends PageBase{
 		
 		//find the Edit button and click
 		driver.findElement(By.cssSelector("[ng-click='state.editFile()']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		
 		//System.out.println("printing out filetitle, documentpath and filename " + filetitle + documentpath + filename);
 		//find the add attachment link and click
-		driver.findElement(By.cssSelector("span.btn-text")).click();
+		driver.findElement(By.cssSelector("[ng-click='state.addAttachment()']")).click();
 		
 		Thread.sleep(2000);
 		
@@ -43,13 +43,13 @@ public class FileEditPage extends PageBase{
 		
 		//is the add attachment button enabled?  print out true or false
 		System.out.println("is the add attachment button enabled? " + (driver.findElement
-				(By.cssSelector("submit.right.button.btn.green-btn")).isEnabled()) );
+				(By.cssSelector("[ng-click='ctrl.confirmModal()']")).isEnabled()) );
 		
 		Thread.sleep(1000);
 		
 		//click the add attachment button	
-		driver.findElement(By.cssSelector("submit.right.button.btn.green-btn")).click();
-		Thread.sleep(5000);
+//		driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']")).click();
+//		Thread.sleep(4000);
 	
 		
 		//click and hold the add attachment button
@@ -59,15 +59,25 @@ public class FileEditPage extends PageBase{
 //	    	    	    
 //	    //to release the button press
 //	    action.moveToElement(driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']"))).release();
-//	    Thread.sleep(6000);
+//	    Thread.sleep(3000);
 	    
 	    //mouse hover over then click
-//	    Actions hover=new Actions(driver);
-//	    hover.moveToElement(driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']")));
-//	    Thread.sleep(2000);
-//	    driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']")).click();
-//	    
-//	    Thread.sleep(3000);
+		
+		// to hover the mouse pointer over the Add Attachment link
+		WebElement ele = driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']"));
+		Actions action = new Actions(driver);
+		action.moveToElement(ele).build().perform();
+		
+		Thread.sleep(2000);
+		
+		//click on the add attachment link
+		action.moveToElement(ele).click().perform();
+		
+		// after hovering the mouse pointer click on the Add Attachment button
+	    //driver.findElement(By.cssSelector("[ng-click='ctrl.confirmModal()']")).click();
+							
+
+	    Thread.sleep(3000);
 	    
 //		WebElement element = driver.findElement(By.xpath("//div[@class='modal-content-area']/div[2]/div[3]/button"));
 //		element.click();
@@ -101,7 +111,7 @@ public class FileEditPage extends PageBase{
 //		Thread.sleep(3000);
 	    
 		driver.navigate().refresh();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		
 		return new FileEditPage(driver);
@@ -109,17 +119,40 @@ public class FileEditPage extends PageBase{
 	
 	public boolean isAddAttachmentSuccessful (String filetitle) throws InterruptedException
 	{
-		String expectedstr = filetitle;
 		
-		System.out.println("The available attached file is " + driver.findElement(By.xpath
-				("//table[@class='right-pane-document-table striped']/tbody/tr/td")).getText());
+		//DTS QA File Page Documents table 
+		WebTable table = new WebTable(driver.findElement(By.xpath("//div[@class='app-right-pane "
+				+ "ng-scope']/div/table")));
+						
+		Thread.sleep(2000);
+		
+		//Print out all webtable values
+		System.out.println("");
+		System.out.println("==== getTextDisplayedInAllRows ====");
+		String[][] tableText = table.getTextDisplayedInAllRows();
+		for(String[] row:tableText)
+		{
+			for(String cell:row)
+			{
+				System.out.print(cell+"   ");
+			}
+			System.out.println("");
+		}
+		
+		Thread.sleep(4000);
+				
+		System.out.println("getRowElement for attachment name: " + table.getRowElement(filetitle).getText());
+		
+		Thread.sleep(2000);
+		
+		String retrieveVal = table.getRowElement(filetitle).getText();
+		
 		
 		Thread.sleep(2000);
 		
 		boolean testresults;
 		
-		testresults = driver.findElement(By.xpath("//table[@class='right-pane-document-table striped']"
-				+ "/tbody/tr/td")).getText().contains(expectedstr);
+		testresults = retrieveVal.contains(filetitle);
 		
         Thread.sleep(2000);
 		

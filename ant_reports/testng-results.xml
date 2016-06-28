@@ -1,21 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="4" total="11" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Ant suite" duration-ms="72864" started-at="2016-06-17T12:28:08Z" finished-at="2016-06-17T12:29:21Z">
+  <suite name="Ant suite" duration-ms="261158" started-at="2016-06-28T14:12:26Z" finished-at="2016-06-28T14:16:47Z">
     <groups>
     </groups>
-    <test name="Ant test" duration-ms="72864" started-at="2016-06-17T12:28:08Z" finished-at="2016-06-17T12:29:21Z">
+    <test name="Ant test" duration-ms="261158" started-at="2016-06-28T14:12:26Z" finished-at="2016-06-28T14:16:47Z">
       <class name="com.test1.tests.RTestChrome">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforSuite" is-config="true" duration-ms="23" started-at="2016-06-17T08:28:08Z" finished-at="2016-06-17T08:28:08Z">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforSuite" is-config="true" duration-ms="10" started-at="2016-06-28T10:12:26Z" finished-at="2016-06-28T10:12:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforeMethod" is-config="true" duration-ms="6584" started-at="2016-06-17T08:28:09Z" finished-at="2016-06-17T08:28:16Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="5641" started-at="2016-06-28T10:12:27Z" finished-at="2016-06-28T10:12:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="testSuccessfulLogIn" duration-ms="12933" started-at="2016-06-17T08:28:16Z" data-provider="dataProvider" finished-at="2016-06-17T08:28:29Z">
+        <test-method status="PASS" signature="testSuccessfulNewUserCreationDBcheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulNewUserCreationDBcheck" duration-ms="27127" started-at="2016-06-28T10:12:33Z" data-provider="dataProvider" finished-at="2016-06-28T10:13:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jason Lee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewParaUser1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Active]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Paralegal]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[770.111.2222]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[newparauser1@testing.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[parauser1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[parauser1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[C:\\testfolder\\]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[parauser1.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulNewUserCreationDBcheck -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1549" started-at="2016-06-28T10:13:00Z" finished-at="2016-06-28T10:13:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4883" started-at="2016-06-28T10:13:01Z" finished-at="2016-06-28T10:13:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulNewUserCreationDBcheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulNewUserCreationDBcheck" duration-ms="26478" started-at="2016-06-28T10:13:06Z" data-provider="dataProvider" finished-at="2016-06-28T10:13:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jason Lee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewAdminUserTest]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Active]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[404.222.3333]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[newadminusertest@testing.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[adminuser1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[adminuser1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[C:\\testfolder\\]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[admin1.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulNewUserCreationDBcheck -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1391" started-at="2016-06-28T10:13:33Z" finished-at="2016-06-28T10:13:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4335" started-at="2016-06-28T10:13:34Z" finished-at="2016-06-28T10:13:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulNewUserCreationDBcheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulNewUserCreationDBcheck" duration-ms="26559" started-at="2016-06-28T10:13:38Z" data-provider="dataProvider" finished-at="2016-06-28T10:14:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jason Lee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewClientUser]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Active]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Client]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[678.444.5555]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[newclientuser@testing.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[clientuser1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[clientuser1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[C:\\testfolder\\]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[clientuser1.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulNewUserCreationDBcheck -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1383" started-at="2016-06-28T10:14:05Z" finished-at="2016-06-28T10:14:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4344" started-at="2016-06-28T10:14:06Z" finished-at="2016-06-28T10:14:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulNewUserCreationDBcheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulNewUserCreationDBcheck" duration-ms="26165" started-at="2016-06-28T10:14:11Z" data-provider="dataProvider" finished-at="2016-06-28T10:14:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jason Lee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewDataEntryUser]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Active]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Data Entry]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[770.999.3456]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[newdataentryuser@testing.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[dataentryuser1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[dataentryuser1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[C:\\testfolder\\]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[dataentryuser1.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulNewUserCreationDBcheck -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1708" started-at="2016-06-28T10:14:37Z" finished-at="2016-06-28T10:14:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4598" started-at="2016-06-28T10:14:39Z" finished-at="2016-06-28T10:14:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulLogIn" duration-ms="12143" started-at="2016-06-28T10:14:43Z" data-provider="dataProvider" finished-at="2016-06-28T10:14:55Z">
           <params>
             <param index="0">
               <value>
@@ -31,15 +307,371 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="afterMethod" is-config="true" duration-ms="1544" started-at="2016-06-17T08:28:29Z" finished-at="2016-06-17T08:28:30Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1345" started-at="2016-06-28T10:14:55Z" finished-at="2016-06-28T10:14:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforeMethod" is-config="true" duration-ms="4472" started-at="2016-06-17T08:28:30Z" finished-at="2016-06-17T08:28:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4069" started-at="2016-06-28T10:14:57Z" finished-at="2016-06-28T10:15:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulLogOut(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="testSuccessfulLogOut" duration-ms="10235" started-at="2016-06-17T08:28:35Z" data-provider="dataProvider" finished-at="2016-06-17T08:28:45Z">
+        <test-method status="FAIL" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulLogIn" duration-ms="14355" started-at="2016-06-28T10:15:01Z" data-provider="dataProvider" finished-at="2016-06-28T10:15:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewParaUser1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[parauser1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"h1.page-title"}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'E5530-2340', ip: '10.0.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir6932_31750}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a1838f4cda4bdeebf8213b4a315b8dbc
+*** Element info: {Using=css selector, value=h1.page-title}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"h1.page-title"}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'E5530-2340', ip: '10.0.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir6932_31750}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a1838f4cda4bdeebf8213b4a315b8dbc
+*** Element info: {Using=css selector, value=h1.page-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:482)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.test1.pages.DefaultLoadingPage.isLogInSuccessful(DefaultLoadingPage.java:33)
+	at com.test1.tests.RTestChrome.testSuccessfulLogIn(RTestChrome.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1355" started-at="2016-06-28T10:15:15Z" finished-at="2016-06-28T10:15:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4328" started-at="2016-06-28T10:15:16Z" finished-at="2016-06-28T10:15:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulLogIn" duration-ms="14387" started-at="2016-06-28T10:15:21Z" data-provider="dataProvider" finished-at="2016-06-28T10:15:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewAdminUserTest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adminuser1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"h1.page-title"}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'E5530-2340', ip: '10.0.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir1100_17005}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4af46cd9e6d7144b4cba9f7d6c58ab79
+*** Element info: {Using=css selector, value=h1.page-title}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"h1.page-title"}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'E5530-2340', ip: '10.0.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir1100_17005}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4af46cd9e6d7144b4cba9f7d6c58ab79
+*** Element info: {Using=css selector, value=h1.page-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:482)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.test1.pages.DefaultLoadingPage.isLogInSuccessful(DefaultLoadingPage.java:33)
+	at com.test1.tests.RTestChrome.testSuccessfulLogIn(RTestChrome.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1406" started-at="2016-06-28T10:15:35Z" finished-at="2016-06-28T10:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="3783" started-at="2016-06-28T10:15:36Z" finished-at="2016-06-28T10:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulLogIn" duration-ms="14292" started-at="2016-06-28T10:15:40Z" data-provider="dataProvider" finished-at="2016-06-28T10:15:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewClientUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[clientuser1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"h1.page-title"}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'E5530-2340', ip: '10.0.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir6152_2193}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2159fcd26f0f6803952e5cf25baee951
+*** Element info: {Using=css selector, value=h1.page-title}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"h1.page-title"}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'E5530-2340', ip: '10.0.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir6152_2193}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2159fcd26f0f6803952e5cf25baee951
+*** Element info: {Using=css selector, value=h1.page-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:482)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.test1.pages.DefaultLoadingPage.isLogInSuccessful(DefaultLoadingPage.java:33)
+	at com.test1.tests.RTestChrome.testSuccessfulLogIn(RTestChrome.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1354" started-at="2016-06-28T10:15:55Z" finished-at="2016-06-28T10:15:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4043" started-at="2016-06-28T10:15:56Z" finished-at="2016-06-28T10:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulLogIn" duration-ms="14307" started-at="2016-06-28T10:16:00Z" data-provider="dataProvider" finished-at="2016-06-28T10:16:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewDataEntryUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dataentryuser1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"h1.page-title"}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'E5530-2340', ip: '10.0.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir3460_13855}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 028563ca80d3099a670388de9c7c5d10
+*** Element info: {Using=css selector, value=h1.page-title}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"h1.page-title"}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'E5530-2340', ip: '10.0.0.71', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir3460_13855}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 028563ca80d3099a670388de9c7c5d10
+*** Element info: {Using=css selector, value=h1.page-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:482)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.test1.pages.DefaultLoadingPage.isLogInSuccessful(DefaultLoadingPage.java:33)
+	at com.test1.tests.RTestChrome.testSuccessfulLogIn(RTestChrome.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1353" started-at="2016-06-28T10:16:14Z" finished-at="2016-06-28T10:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4598" started-at="2016-06-28T10:16:16Z" finished-at="2016-06-28T10:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogOut(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulLogOut" duration-ms="12008" started-at="2016-06-28T10:16:20Z" data-provider="dataProvider" finished-at="2016-06-28T10:16:32Z">
           <params>
             <param index="0">
               <value>
@@ -55,15 +687,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLogOut -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="afterMethod" is-config="true" duration-ms="1315" started-at="2016-06-17T08:28:45Z" finished-at="2016-06-17T08:28:46Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1376" started-at="2016-06-28T10:16:32Z" finished-at="2016-06-28T10:16:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforeMethod" is-config="true" duration-ms="4343" started-at="2016-06-17T08:28:46Z" finished-at="2016-06-17T08:28:51Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="beforeMethod" is-config="true" duration-ms="4241" started-at="2016-06-28T10:16:34Z" finished-at="2016-06-28T10:16:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulIssuesFileDownLoad(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="testSuccessfulIssuesFileDownLoad" duration-ms="7876" started-at="2016-06-17T08:28:51Z" data-provider="dataProvider" finished-at="2016-06-17T08:28:59Z">
+        <test-method status="PASS" signature="testSuccessfulIssuesFileDownLoad(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="testSuccessfulIssuesFileDownLoad" duration-ms="7838" started-at="2016-06-28T10:16:38Z" data-provider="dataProvider" finished-at="2016-06-28T10:16:46Z">
           <params>
             <param index="0">
               <value>
@@ -89,46 +721,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulIssuesFileDownLoad -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="afterMethod" is-config="true" duration-ms="1688" started-at="2016-06-17T08:28:59Z" finished-at="2016-06-17T08:29:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="beforeMethod" is-config="true" duration-ms="5735" started-at="2016-06-17T08:29:00Z" finished-at="2016-06-17T08:29:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulSumSheetDownLoadFiref(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="testSuccessfulSumSheetDownLoadFiref" duration-ms="13887" started-at="2016-06-17T08:29:06Z" data-provider="dataProvider" finished-at="2016-06-17T08:29:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Richmond]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[051-0-176-00-0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[C:\\testfolder\\SeleniumDownloads]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Attchment.pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSuccessfulSumSheetDownLoadFiref -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@449b2d27]" name="afterMethod" is-config="true" duration-ms="1334" started-at="2016-06-17T08:29:20Z" finished-at="2016-06-17T08:29:21Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@490d6c15]" name="afterMethod" is-config="true" duration-ms="1525" started-at="2016-06-28T10:16:46Z" finished-at="2016-06-28T10:16:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
