@@ -27,17 +27,27 @@ public class DefaultLoadingPage extends PageBase{
 		return new LogInPage(driver);
 	}
 	
-	public boolean isLogInSuccessful (String username) throws InterruptedException
+	public boolean isLogInSuccessful () throws InterruptedException
 	{
+		//to retreive the page title
+		//driver.getTitle();
 		
-		System.out.println("The page title includes " + driver.findElement(By.cssSelector("h1.page-title")).getText());
+		System.out.println("The page title includes " + driver.getTitle());
 		
-		Thread.sleep(1000);
+		String expected = "Log in";
+		String actual = driver.getTitle();
 		
-		boolean testresults;
+		boolean testresults = false;
 		
-		testresults = driver.findElement(By.cssSelector("h1.page-title")).getText().contains(username);
-		
+		if (actual.equals(expected))
+		{
+			testresults = false;
+		}
+		if (!actual.equals(expected))
+		{
+			testresults = true;
+		}
+				
         Thread.sleep(1000);
 		
 		System.out.println(testresults);

@@ -25,15 +25,15 @@ public class TestSuccessfulAdminAddAttachment extends TestBase
 {
 
   @Test (dataProvider = "dataProvider")
-  public void testSuccessfulAdminAddAttachment(String client, String username, String password, String mp, String documentpath, 
-		  String filetitle, String filename) throws InterruptedException, IOException, AWTException 
+  public void testSuccessfulAdminAddAttachment(String client, String username, String password, String mp, String filetitle, 
+		  String documentpath, String filename) throws InterruptedException, IOException, AWTException 
   {
 	
 	  
 	boolean testResult = loginpage.loginAsAdmin(username, password)
 								  .SearchClient(client)
 								  .clickMapParcelLink(mp)
-								  .addAttachment(documentpath, filetitle, filename)
+								  .addAttachment(filetitle, documentpath, filename)
 								  .isAddAttachmentSuccessful(filetitle); 
   
 	 System.out.println(testResult);	

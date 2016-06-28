@@ -7,7 +7,7 @@
         <methods>
           <include name="beforSuite"/>
           <include name="afterMethod"/>
-          <include name="testSuccessfulAdminAddAttachment" invocation-numbers="0"/>
+          <include name="testSuccessfulAdminAddAttachment" invocation-numbers="0 1"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.test1.tests.TestSuccessfulAdminAddAttachment -->

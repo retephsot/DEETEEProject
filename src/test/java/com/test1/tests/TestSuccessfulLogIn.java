@@ -31,7 +31,7 @@ public class TestSuccessfulLogIn extends TestBase
     //LogInPage logInPage = new LogInPage(driver);
 	  
 	boolean testResult = loginpage.login(username, password)
-								  .isLogInSuccessful(username); 
+								  .isLogInSuccessful();
   
 	 System.out.println(testResult);	
 	 
