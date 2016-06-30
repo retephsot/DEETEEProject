@@ -67,5 +67,16 @@ public class FileManagerPage extends PageBase{
 	}
 	
 	
+	public ManageClientsPage ClickManageClientsLink() throws InterruptedException, AWTException
+	{
+				
+		//find the Manage Clients Link and click // css=[ui-sref='client-manager']
+		driver.findElement(By.cssSelector("[ui-sref='client-manager']")).click();
+		Thread.sleep(3000);
+			
+		return new ManageClientsPage(driver);
+	}
+	
+	
 	
 }
