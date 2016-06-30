@@ -103,26 +103,83 @@ public class RTestChrome extends TestBase
 	 
   }
   
-//  @Test (priority=4, dataProvider = "dataProvider")
-//  public void testSuccessfulSumSheetDownLoadFiref(String username, String password, String mp, String downloadPath, 
-//		  String filename) throws InterruptedException, IOException, AWTException 
-//  {
-//	
-//	  
-//	boolean testResult = loginpage.login(username, password)
-//								  .SelectfileInputMP(mp)
-//								  .clickActionLink()
-//								  .DownloadTestAttachmentFirefox()
-//								  .isFileDownLoadSuccessful(downloadPath, filename); 
-//  
-//	 System.out.println(testResult);	
-//	 
-//	 Assert.assertTrue(testResult, "The Summary Sheet download was not successful for " + mp );
-//	 
-//  }
-//  
+  @Test (priority=5, dataProvider = "dataProvider")
+  public void testSuccessfulAdminAddAttachment(String client, String username, String password, String mp, String filetitle, 
+		  String documentpath, String filename) throws InterruptedException, IOException, AWTException 
+  {
+	
+	  
+	boolean testResult = loginpage.loginAsAdmin(username, password)
+								  .SearchClient(client)
+								  .clickMapParcelLink(mp)
+								  .addAttachment(filetitle, documentpath, filename)
+								  .isAddAttachmentSuccessful(filetitle); 
+  
+	 System.out.println(testResult);	
+	 
+	 Assert.assertTrue(testResult, filetitle + " was not successfully attached for " + mp );
+	 
+  }
+  
+  @Test (priority=6, dataProvider = "dataProvider")
+  public void testSuccessfulSumSheetDownLoadFiref(String username, String password, String mp, String downloadPath, 
+		  String filename) throws InterruptedException, IOException, AWTException 
+  {
+	
+	  
+	boolean testResult = loginpage.login(username, password)
+								  .SelectfileInputMP(mp)
+								  .clickActionLink()
+								  .DownloadTestAttachmentFirefox()
+								  .isFileDownLoadSuccessful(downloadPath, filename); 
+  
+	 System.out.println(testResult);	
+	 
+	 Assert.assertTrue(testResult, "The Summary Sheet download was not successful for " + mp );
+	 
+  }
+  
+  @Test (priority=7, dataProvider = "dataProvider")
+  public void testSuccessfulNewClientCreationDBcheck(String username, String password, String clientname, String clientphone,
+		String clientext, String clientaddress, String clientcity, String clientstate, String clientzip) 
+				  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
+  {
+	
 
+	  
+	boolean testResult = loginpage.loginAsAdmin(username, password)
+								  .ClickManageClientsLink()
+								  .ClickAddClientButton()
+								  .CreateNewClient(clientname, clientphone, clientext, clientaddress, clientcity, clientstate, clientzip)
+								  .isCreateClientSuccessfulCheckDB(clientname, clientaddress);
+  
+	 System.out.println(testResult);	
+	 
+	 Assert.assertTrue(testResult, "The client account for " + clientname + " has not been successfully created." );
+	 
+  }
+  
+  @Test (priority=8, dataProvider = "dataProvider")
+  public void testSuccessfulNewClientCreation(String username, String password, String clientname, String clientphone,
+		String clientext, String clientaddress, String clientcity, String clientstate, String clientzip) 
+				  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
+  {
+	
 
+	  
+	boolean testResult = loginpage.loginAsAdmin(username, password)
+								  .ClickManageClientsLink()
+								  .ClickAddClientButton()
+								  .CreateNewClient(clientname, clientphone, clientext, clientaddress, clientcity, clientstate, clientzip)
+								  .ClickMangeClientsButton()
+								  .isCreateClientSuccessful(clientname, clientaddress);
+  
+	 System.out.println(testResult);	
+	 
+	 Assert.assertTrue(testResult, "The client account for " + clientname + " has not been successfully created." );
+	 
+  }
+  
 
 
 }

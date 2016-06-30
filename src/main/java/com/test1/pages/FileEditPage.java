@@ -141,7 +141,7 @@ public class FileEditPage extends PageBase{
 		
 		Thread.sleep(4000);
 				
-		System.out.println("getRowElement for attachment name: " + table.getRowElement(filetitle).getText());
+		System.out.println("The row element for the attachment name is: " + table.getRowElement(filetitle).getText());
 		
 		Thread.sleep(2000);
 		
