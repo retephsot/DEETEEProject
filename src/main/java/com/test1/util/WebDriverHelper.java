@@ -101,8 +101,8 @@ public class WebDriverHelper
 //		Toolkit toolkit = Toolkit.getDefaultToolkit();
 //		int Width = (int) toolkit.getScreenSize().getWidth();
 //		int Height = (int)toolkit.getScreenSize().getHeight();
-//		driver.manage().window().setSize(new Dimension(1800,1600));
-		
+//		driver.manage().window().setSize(new Dimension(1500,1400));
+	
 		//Set application screen to full screen
 		driver.manage().window().maximize();
 		

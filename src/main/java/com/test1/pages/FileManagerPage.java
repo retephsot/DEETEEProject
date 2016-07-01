@@ -78,5 +78,16 @@ public class FileManagerPage extends PageBase{
 	}
 	
 	
+	public BatchFileImportPage ClickImportFilesLink() throws InterruptedException, AWTException
+	{
+				
+		//find the Import Files Link and click
+		driver.findElement(By.cssSelector("[ui-sref='file-import']")).click();
+		Thread.sleep(3000);
+			
+		return new BatchFileImportPage(driver);
+	}
+	
+	
 	
 }

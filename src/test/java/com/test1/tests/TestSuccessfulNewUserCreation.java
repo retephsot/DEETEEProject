@@ -26,7 +26,7 @@ public class TestSuccessfulNewUserCreation extends TestBase
 
   @Test (dataProvider = "dataProvider")
   public void testSuccessfulNewUserCreate(String username, String password, String nusername, String status,
-		String role, String telenumber, String email, String npassword, String confirmpw, String path,
+		String role, String client, String telenumber, String email, String npassword, String confirmpw, String path,
 		String imgname) 
 				  throws InterruptedException, IOException, AWTException 
   {
@@ -37,7 +37,7 @@ public class TestSuccessfulNewUserCreation extends TestBase
 	boolean testResult = loginpage.loginAsAdmin(username, password)
 								  .ClickManageUsersLink()
 								  .AddUser()
-								  .CreateNewUser(nusername, status, role, telenumber, email, npassword, confirmpw, path, imgname)
+								  .CreateNewUser(nusername, status, role, client, telenumber, email, npassword, confirmpw, path, imgname)
 								  .clickManageUsersPagelink()
 								  .isCreateUserSuccessful(nusername);
   
