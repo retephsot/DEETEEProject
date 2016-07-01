@@ -1,135 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61556" started-at="2016-06-30T17:06:28Z" finished-at="2016-06-30T17:07:30Z">
+  <suite name="Default suite" duration-ms="57345" started-at="2016-07-01T15:39:11Z" finished-at="2016-07-01T15:40:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61556" started-at="2016-06-30T17:06:28Z" finished-at="2016-06-30T17:07:30Z">
-      <class name="com.test1.tests.TestSuccessfulNewClientCreation">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulNewClientCreation@483bf400]" name="beforSuite" is-config="true" duration-ms="10" started-at="2016-06-30T13:06:28Z" finished-at="2016-06-30T13:06:28Z">
+    <test name="Default test" duration-ms="57345" started-at="2016-07-01T15:39:11Z" finished-at="2016-07-01T15:40:08Z">
+      <class name="com.test1.tests.TestSuccessfulImportFileToClient">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulImportFileToClient@483bf400]" name="beforSuite" is-config="true" duration-ms="14" started-at="2016-07-01T11:39:11Z" finished-at="2016-07-01T11:39:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNewClientCreation@483bf400]" name="beforeMethod" is-config="true" duration-ms="4205" started-at="2016-06-30T13:06:29Z" finished-at="2016-06-30T13:06:33Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulImportFileToClient@483bf400]" name="beforeMethod" is-config="true" duration-ms="4903" started-at="2016-07-01T11:39:12Z" finished-at="2016-07-01T11:39:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulNewClientCreation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulNewClientCreation@483bf400]" name="testSuccessfulNewClientCreation" duration-ms="26045" started-at="2016-06-30T13:06:33Z" data-provider="dataProvider" finished-at="2016-06-30T13:06:59Z">
+        <test-method status="PASS" signature="testSuccessfulImportFileToClient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulImportFileToClient@483bf400]" name="testSuccessfulImportFileToClient" duration-ms="50717" started-at="2016-07-01T11:39:17Z" data-provider="dataProvider" finished-at="2016-07-01T11:40:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[NewAdminUserTest]]>
+                <![CDATA[Jason Lee]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[adminuser1]]>
+                <![CDATA[password1]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[ClientUserT1]]>
+                <![CDATA[NewClientTestA]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[123-111-9999]]>
+                <![CDATA[Nov 28 2016]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[123]]>
+                <![CDATA[C:\\testfolder\\uploadfiles\\]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[333 Street Dr.]]>
+                <![CDATA[ImportJasonTestClient3.xlsx]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Doraville]]>
+                <![CDATA[11-675-090898]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[GA]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[30023]]>
+                <![CDATA[058-2-196-00-0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulNewClientCreation -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNewClientCreation@483bf400]" name="afterMethod" is-config="true" duration-ms="1001" started-at="2016-06-30T13:06:59Z" finished-at="2016-06-30T13:07:00Z">
+        </test-method> <!-- testSuccessfulImportFileToClient -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulImportFileToClient@483bf400]" name="afterMethod" is-config="true" duration-ms="1024" started-at="2016-07-01T11:40:07Z" finished-at="2016-07-01T11:40:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNewClientCreation@483bf400]" name="beforeMethod" is-config="true" duration-ms="3876" started-at="2016-06-30T13:07:00Z" finished-at="2016-06-30T13:07:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulNewClientCreation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulNewClientCreation@483bf400]" name="testSuccessfulNewClientCreation" duration-ms="24905" started-at="2016-06-30T13:07:04Z" data-provider="dataProvider" finished-at="2016-06-30T13:07:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NewAdminUserTest]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adminuser1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ClientUserT2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[678-990-1234]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[888 My Road Dr.]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Avondale]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[GA]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[23004]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSuccessfulNewClientCreation -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulNewClientCreation@483bf400]" name="afterMethod" is-config="true" duration-ms="890" started-at="2016-06-30T13:07:29Z" finished-at="2016-06-30T13:07:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.test1.tests.TestSuccessfulNewClientCreation -->
+      </class> <!-- com.test1.tests.TestSuccessfulImportFileToClient -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

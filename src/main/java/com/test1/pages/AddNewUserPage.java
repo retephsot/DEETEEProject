@@ -10,8 +10,8 @@ public class AddNewUserPage extends PageBase{
 		super(driver);
 	}
 	
-	public AddNewUserPage CreateNewUser(String nusername, String status, String role, String telenumber, 
-			String email, String npassword, String confirmpw,
+	public AddNewUserPage CreateNewUser(String nusername, String status, String role, String client, 
+			String telenumber, String email, String npassword, String confirmpw,
 			String path, String imgname) throws InterruptedException
 	{
 		
@@ -58,6 +58,13 @@ public class AddNewUserPage extends PageBase{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath(choice2)).click();
 		Thread.sleep(1000);
+		
+		if (role.equals("Client"))
+		{
+			driver.findElement(By.cssSelector("[ng-readonly='ctrl.islocked']")).sendKeys(client);
+			Thread.sleep(1000);
+			driver.findElement(By.cssSelector("[ng-click='ctrl.setSearch(result)']")).click();
+		}
 		
 		//fill out rest of the fields
 		driver.findElement(By.cssSelector("[ng-model='state.model.phoneNumber']")).sendKeys(telenumber);

@@ -1,5 +1,9 @@
 package com.test1.pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -31,9 +35,10 @@ public class LogInPage extends PageBase{
 		
 	}
 	
-	public FileManagerPage loginAsAdmin(String username, String password) throws InterruptedException
+	public FileManagerPage loginAsAdmin(String username, String password) throws InterruptedException, AWTException
 	{
 		
+			
 		//remove trailing zero from password		
 		//password = password.replaceAll("\\.0*$", "");
 		

@@ -27,7 +27,7 @@ public class RTestChrome extends TestBase
 
 	 @Test (dataProvider = "dataProvider")
 	  public void testSuccessfulNewUserCreationDBcheck(String username, String password, String nusername, String status,
-			String role, String telenumber, String email, String npassword, String confirmpw, String path,
+			String role, String client, String telenumber, String email, String npassword, String confirmpw, String path,
 			String imgname) 
 					  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
 	  {
@@ -38,7 +38,7 @@ public class RTestChrome extends TestBase
 		boolean testResult = loginpage.loginAsAdmin(username, password)
 									  .ClickManageUsersLink()
 									  .AddUser()
-									  .CreateNewUser(nusername, status, role, telenumber, email, npassword, confirmpw, path, imgname)
+									  .CreateNewUser(nusername, status, role, client, telenumber, email, npassword, confirmpw, path, imgname)
 									  .clickManageUsersPagelink()
 									  .isCreateUserSuccessfulCheckDB(nusername, email);
 	  
