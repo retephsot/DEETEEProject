@@ -48,20 +48,21 @@ public class AddNewUserPage extends PageBase{
 		}
 		if (role.equals("Data Entry"))
 		{
-			choice2 = "//div[@class='col third']/div/div/ul/li[3]/span";
+			choice2 = "//div[@class='col third']/div/div/ul/li[4]/span";
 		}
 		if (role.equals("Client"))
 		{
-			choice2 = "//div[@class='col third']/div/div/ul/li[4]/span";
+			choice2 = "//div[@class='col third']/div/div/ul/li[5]/span";
 		}
 		driver.findElement(By.xpath("//div[@class='col third']/div/div/input")).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(choice2)).click();
 		Thread.sleep(1000);
 		
+		//enter client value for client field
 		if (role.equals("Client"))
 		{
-			driver.findElement(By.cssSelector("[ng-readonly='ctrl.islocked']")).sendKeys(client);
+			driver.findElement(By.cssSelector("[ng-change='ctrl.autoSearch()'][ng-readonly='ctrl.islocked']")).sendKeys(client);
 			Thread.sleep(1000);
 			driver.findElement(By.cssSelector("[ng-click='ctrl.setSearch(result)']")).click();
 		}

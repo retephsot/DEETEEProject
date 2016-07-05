@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57345" started-at="2016-07-01T15:39:11Z" finished-at="2016-07-01T15:40:08Z">
+  <suite name="Default suite" duration-ms="45080" started-at="2016-07-05T17:58:14Z" finished-at="2016-07-05T17:58:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57345" started-at="2016-07-01T15:39:11Z" finished-at="2016-07-01T15:40:08Z">
-      <class name="com.test1.tests.TestSuccessfulImportFileToClient">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulImportFileToClient@483bf400]" name="beforSuite" is-config="true" duration-ms="14" started-at="2016-07-01T11:39:11Z" finished-at="2016-07-01T11:39:11Z">
+    <test name="Default test" duration-ms="45080" started-at="2016-07-05T17:58:14Z" finished-at="2016-07-05T17:58:59Z">
+      <class name="com.test1.tests.TestSuccessfulLogIn">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="beforSuite" is-config="true" duration-ms="14" started-at="2016-07-05T13:58:14Z" finished-at="2016-07-05T13:58:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulImportFileToClient@483bf400]" name="beforeMethod" is-config="true" duration-ms="4903" started-at="2016-07-01T11:39:12Z" finished-at="2016-07-01T11:39:17Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="beforeMethod" is-config="true" duration-ms="4969" started-at="2016-07-05T13:58:15Z" finished-at="2016-07-05T13:58:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulImportFileToClient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulImportFileToClient@483bf400]" name="testSuccessfulImportFileToClient" duration-ms="50717" started-at="2016-07-01T11:39:17Z" data-provider="dataProvider" finished-at="2016-07-01T11:40:07Z">
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="testSuccessfulLogIn" duration-ms="6647" started-at="2016-07-05T13:58:20Z" data-provider="dataProvider" finished-at="2016-07-05T13:58:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Jason Lee]]>
+                <![CDATA[NewParaUser2]]>
               </value>
             </param>
             <param index="1">
@@ -27,45 +27,124 @@
                 <![CDATA[password1]]>
               </value>
             </param>
-            <param index="2">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="afterMethod" is-config="true" duration-ms="1071" started-at="2016-07-05T13:58:26Z" finished-at="2016-07-05T13:58:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="beforeMethod" is-config="true" duration-ms="4006" started-at="2016-07-05T13:58:27Z" finished-at="2016-07-05T13:58:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="testSuccessfulLogIn" duration-ms="6452" started-at="2016-07-05T13:58:31Z" data-provider="dataProvider" finished-at="2016-07-05T13:58:38Z">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[NewClientTestA]]>
+                <![CDATA[NewAdminUser2]]>
               </value>
             </param>
-            <param index="3">
+            <param index="1">
               <value>
-                <![CDATA[Nov 28 2016]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[C:\\testfolder\\uploadfiles\\]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[ImportJasonTestClient3.xlsx]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[11-675-090898]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[058-2-196-00-0]]>
+                <![CDATA[password1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulImportFileToClient -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulImportFileToClient@483bf400]" name="afterMethod" is-config="true" duration-ms="1024" started-at="2016-07-01T11:40:07Z" finished-at="2016-07-01T11:40:08Z">
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="afterMethod" is-config="true" duration-ms="876" started-at="2016-07-05T13:58:38Z" finished-at="2016-07-05T13:58:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.test1.tests.TestSuccessfulImportFileToClient -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="beforeMethod" is-config="true" duration-ms="3451" started-at="2016-07-05T13:58:39Z" finished-at="2016-07-05T13:58:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="testSuccessfulLogIn" duration-ms="5868" started-at="2016-07-05T13:58:42Z" data-provider="dataProvider" finished-at="2016-07-05T13:58:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewClientUser2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="afterMethod" is-config="true" duration-ms="927" started-at="2016-07-05T13:58:48Z" finished-at="2016-07-05T13:58:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="beforeMethod" is-config="true" duration-ms="3665" started-at="2016-07-05T13:58:49Z" finished-at="2016-07-05T13:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="testSuccessfulLogIn" duration-ms="5562" started-at="2016-07-05T13:58:53Z" data-provider="dataProvider" finished-at="2016-07-05T13:58:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewDataEntryUser2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login is not successful for username NewDataEntryUser2 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login is not successful for username NewDataEntryUser2 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.test1.tests.TestSuccessfulLogIn.testSuccessfulLogIn(TestSuccessfulLogIn.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulLogIn@483bf400]" name="afterMethod" is-config="true" duration-ms="913" started-at="2016-07-05T13:58:58Z" finished-at="2016-07-05T13:58:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test1.tests.TestSuccessfulLogIn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

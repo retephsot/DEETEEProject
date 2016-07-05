@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test1.tests.TestSuccessfulImportFileToClient">
+      <class name="com.test1.tests.TestSuccessfulLogIn">
         <methods>
-          <include name="testSuccessfulImportFileToClient" invocation-numbers="0"/>
+          <include name="testSuccessfulLogIn" invocation-numbers="3"/>
           <include name="beforSuite"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.test1.tests.TestSuccessfulImportFileToClient -->
+      </class> <!-- com.test1.tests.TestSuccessfulLogIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
