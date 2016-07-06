@@ -23,7 +23,8 @@ public class FileViewPage extends PageBase{
 		
 		//To scroll down until Test Attachment is visible
 		JavascriptExecutor je = (JavascriptExecutor) driver;
-		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li[3]/a")));
+		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath
+				("//table[@class='modal-data-table']/tbody/tr/td[2]/a/span")));
 		
 		Thread.sleep(3000);
 		
@@ -34,8 +35,8 @@ public class FileViewPage extends PageBase{
 		//to mouse scroll all the way down
 		//robotObj.mouseWheel(-100);
 		
-		//find the Test Attachment link and click
-		driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li[3]/a")).click();
+		//find the Download Attachment link and click
+		driver.findElement(By.cssSelector("a.file-link.truncate")).click();
 		
 		Thread.sleep(3000);
 		
@@ -59,7 +60,8 @@ public class FileViewPage extends PageBase{
 		
 		//To scroll down until Test Attachment is visible
 		JavascriptExecutor je = (JavascriptExecutor) driver;
-		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li/a")));
+		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath
+		("//table[@class='modal-data-table']/tbody/tr/td[2]/a/span")));
 		
 		Thread.sleep(3000);
 		
@@ -69,8 +71,8 @@ public class FileViewPage extends PageBase{
 		//to mouse scroll all the way down
 		//robotObj.mouseWheel(-100);
 		
-		//find the Test Attachment link and click
-		driver.findElement(By.xpath("//ul[@id='client-file-modal-file-list']/li/a")).click();
+		//find the Download Attachment link and click
+		driver.findElement(By.cssSelector("a.file-link.truncate")).click();
 				
 		Thread.sleep(2000);
 			
@@ -85,14 +87,14 @@ public class FileViewPage extends PageBase{
 		
 		
 		File dir = new File(downloadPath);
-	    File[] dir_contents = dir.listFiles();
-	    System.out.println("The value of dir_contents.length is " + dir_contents.length);
+	    File[] dircontents = dir.listFiles();
+	    System.out.println("The value of dircontents.length is " + dircontents.length);
 	    	  	    
-	    for (int i = 0; i < dir_contents.length; i++) {
+	    for (int i = 0; i < dircontents.length; i++) {
 	    		    	
 	    	//System.out.println("The value of i is " + i);
 	    	
-	        if (dir_contents[i].getName().equals(filename))
+	        if (dircontents[i].getName().equals(filename))
 	            return testresults=true;
 	            }
 

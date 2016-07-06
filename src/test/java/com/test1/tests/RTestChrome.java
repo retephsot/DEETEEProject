@@ -24,8 +24,106 @@ import org.testng.annotations.AfterMethod;
 public class RTestChrome extends TestBase
 
 {
+	
+	@Test (dataProvider = "dataProvider")
+	  public void testSuccessfulNewClientCreationDBcheck(String username, String password, String clientname, String clientphone,
+			String clientext, String clientaddress, String clientcity, String clientstate, String clientzip) 
+					  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
+	  {
+		
 
-	 @Test (dataProvider = "dataProvider")
+		  
+		boolean testResult = loginpage.loginAsAdmin(username, password)
+									  .ClickManageClientsLink()
+									  .ClickAddClientButton()
+									  .CreateNewClient(clientname, clientphone, clientext, clientaddress, clientcity, clientstate, clientzip)
+									  .isCreateClientSuccessfulCheckDB(clientname, clientaddress);
+	  
+		 System.out.println(testResult);	
+		 
+		 Assert.assertTrue(testResult, "The client account for " + clientname + " has not been successfully created." );
+		 
+	  }
+	  
+	  @Test (priority=2, dataProvider = "dataProvider")
+	  public void testSuccessfulNewClientCreation(String username, String password, String clientname, String clientphone,
+			String clientext, String clientaddress, String clientcity, String clientstate, String clientzip) 
+					  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
+	  {
+		
+
+		  
+		boolean testResult = loginpage.loginAsAdmin(username, password)
+									  .ClickManageClientsLink()
+									  .ClickAddClientButton()
+									  .CreateNewClient(clientname, clientphone, clientext, clientaddress, clientcity, clientstate, clientzip)
+									  .ClickMangeClientsButton()
+									  .isCreateClientSuccessful(clientname, clientaddress);
+	  
+		 System.out.println(testResult);	
+		 
+		 Assert.assertTrue(testResult, "The client account for " + clientname + " has not been successfully created." );
+		 
+	  }
+	
+	  @Test (priority=3, dataProvider = "dataProvider")
+	  public void testSuccessfulImportFileToClient(String username, String password, String clientname, String batchdate, String path, 
+			  String filename, String mapparcelnumber1, String mapparcelnumber2) throws InterruptedException, IOException, AWTException 
+	  {
+		
+		  
+		boolean testResult = loginpage.loginAsAdmin(username, password)
+									  .ClickImportFilesLink()
+									  .ImportFilesIntoBatch(clientname, batchdate, path, filename)
+									  .ClickSaveImportButton()
+									  .isImportFileSuccessful(mapparcelnumber1, mapparcelnumber2);
+	  
+		 System.out.println(testResult);	
+		 
+		 Assert.assertTrue(testResult, filename + " has not been successfully uploaded for " + clientname );
+		 
+	  }
+	  
+	  @Test (priority=4, dataProvider = "dataProvider")
+	  public void testSuccessfulAdminAddAttachment(String client, String username, String password, String mp, String filetitle, 
+			  String documentpath, String filename) throws InterruptedException, IOException, AWTException 
+	  {
+		
+		  
+		boolean testResult = loginpage.loginAsAdmin(username, password)
+									  .SearchClient(client)
+									  .clickMapParcelLink(mp)
+									  .addAttachment(filetitle, documentpath, filename)
+									  .isAddAttachmentSuccessful(filetitle); 
+	  
+		 System.out.println(testResult);	
+		 
+		 Assert.assertTrue(testResult, filetitle + " was not successfully attached for " + mp );
+		 
+	  }
+	  
+	  @Test (priority=5, dataProvider = "dataProvider")
+	  public void testSuccessfulAddAttachmentDBcheck(String client, String username, String password, String mp, String filetitle, 
+			  String documentpath, String filename) throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
+	  {
+		
+		  
+		boolean testResult = loginpage.loginAsAdmin(username, password)
+									  .SearchClient(client)
+									  .clickMapParcelLink(mp)
+									  .addAttachment(filetitle, documentpath, filename)
+									  .isAddAttachmentSuccessfulCheckDB(filetitle, filename); 
+	  
+		 System.out.println(testResult);	
+		 
+		 Assert.assertTrue(testResult, filetitle + " was not successfully attached for " + mp );
+		 
+	  }
+	  
+
+	  
+
+	 @Test (priority=6, dataProvider = "dataProvider")
 	  public void testSuccessfulNewUserCreationDBcheck(String username, String password, String nusername, String status,
 			String role, String client, String telenumber, String email, String npassword, String confirmpw, String path,
 			String imgname) 
@@ -49,7 +147,7 @@ public class RTestChrome extends TestBase
 	  }
 	  
 	
-	 @Test (priority=2, dataProvider = "dataProvider")
+	 @Test (priority=7, dataProvider = "dataProvider")
 	  public void testSuccessfulNewUserCreate(String username, String password, String nusername, String status,
 			String role, String client, String telenumber, String email, String npassword, String confirmpw, String path,
 			String imgname) 
@@ -74,7 +172,7 @@ public class RTestChrome extends TestBase
 	  
 
 	
-  @Test (priority=3, dataProvider = "dataProvider")
+  @Test (priority=8, dataProvider = "dataProvider")
   public void testSuccessfulLogIn(String username, String password) 
 				  throws InterruptedException, IOException 
   {
@@ -92,7 +190,7 @@ public class RTestChrome extends TestBase
   }
   
 
-  @Test (priority=4, dataProvider = "dataProvider")
+  @Test (priority=9, dataProvider = "dataProvider")
   public void testSuccessfulLogOut(String username, String password) 
 				  throws InterruptedException, IOException 
   {
@@ -113,84 +211,13 @@ public class RTestChrome extends TestBase
 
  
   
-  @Test (priority=5, dataProvider = "dataProvider")
-  public void testSuccessfulNewClientCreationDBcheck(String username, String password, String clientname, String clientphone,
-		String clientext, String clientaddress, String clientcity, String clientstate, String clientzip) 
-				  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
-  {
-	
+  
+  
+  
 
-	  
-	boolean testResult = loginpage.loginAsAdmin(username, password)
-								  .ClickManageClientsLink()
-								  .ClickAddClientButton()
-								  .CreateNewClient(clientname, clientphone, clientext, clientaddress, clientcity, clientstate, clientzip)
-								  .isCreateClientSuccessfulCheckDB(clientname, clientaddress);
   
-	 System.out.println(testResult);	
-	 
-	 Assert.assertTrue(testResult, "The client account for " + clientname + " has not been successfully created." );
-	 
-  }
   
-  @Test (priority=6, dataProvider = "dataProvider")
-  public void testSuccessfulNewClientCreation(String username, String password, String clientname, String clientphone,
-		String clientext, String clientaddress, String clientcity, String clientstate, String clientzip) 
-				  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
-  {
-	
-
-	  
-	boolean testResult = loginpage.loginAsAdmin(username, password)
-								  .ClickManageClientsLink()
-								  .ClickAddClientButton()
-								  .CreateNewClient(clientname, clientphone, clientext, clientaddress, clientcity, clientstate, clientzip)
-								  .ClickMangeClientsButton()
-								  .isCreateClientSuccessful(clientname, clientaddress);
-  
-	 System.out.println(testResult);	
-	 
-	 Assert.assertTrue(testResult, "The client account for " + clientname + " has not been successfully created." );
-	 
-  }
-  
-  @Test (priority=7, dataProvider = "dataProvider")
-  public void testSuccessfulImportFileToClient(String username, String password, String clientname, String batchdate, String path, 
-		  String filename, String mapparcelnumber1, String mapparcelnumber2) throws InterruptedException, IOException, AWTException 
-  {
-	
-	  
-	boolean testResult = loginpage.loginAsAdmin(username, password)
-								  .ClickImportFilesLink()
-								  .ImportFilesIntoBatch(clientname, batchdate, path, filename)
-								  .ClickSaveImportButton()
-								  .isImportFileSuccessful(mapparcelnumber1, mapparcelnumber2);
-  
-	 System.out.println(testResult);	
-	 
-	 Assert.assertTrue(testResult, filename + " has not been successfully uploaded for " + clientname );
-	 
-  }
-
-  @Test (priority=8, dataProvider = "dataProvider")
-  public void testSuccessfulAdminAddAttachment(String client, String username, String password, String mp, String filetitle, 
-		  String documentpath, String filename) throws InterruptedException, IOException, AWTException 
-  {
-	
-	  
-	boolean testResult = loginpage.loginAsAdmin(username, password)
-								  .SearchClient(client)
-								  .clickMapParcelLink(mp)
-								  .addAttachment(filetitle, documentpath, filename)
-								  .isAddAttachmentSuccessful(filetitle); 
-  
-	 System.out.println(testResult);	
-	 
-	 Assert.assertTrue(testResult, filetitle + " was not successfully attached for " + mp );
-	 
-  }
-  
-  @Test (priority=9, dataProvider = "dataProvider")
+  @Test (priority=10, dataProvider = "dataProvider")
   public void testSuccessfulSumSheetDownLoadFiref(String username, String password, String mp, String downloadPath, 
 		  String filename) throws InterruptedException, IOException, AWTException 
   {
