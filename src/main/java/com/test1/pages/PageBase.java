@@ -81,7 +81,7 @@ public class PageBase
 		Connection con = DriverManager.getConnection(dbUrl, username, password);
 		
 		// to show if DB connection is successful
-		System.out.println("Connection Successfull");
+		System.out.println("Connection Successful");
         System.out.println(con); 
 		
 		// Create statement object
@@ -142,7 +142,7 @@ public class PageBase
 		Connection con = DriverManager.getConnection(dbUrl, username, password);
 		
 		// to show if DB connection is successful
-		System.out.println("Connection Successfull");
+		System.out.println("Connection Successful");
         System.out.println(con); 
 		
 		// Create statement object
@@ -213,7 +213,7 @@ public class PageBase
 		Connection con = DriverManager.getConnection(dbUrl, username, password);
 		
 		// to show if DB connection is successful
-		System.out.println("Connection Successfull");
+		System.out.println("Connection Successful");
         System.out.println(con); 
         
         Thread.sleep(1000);

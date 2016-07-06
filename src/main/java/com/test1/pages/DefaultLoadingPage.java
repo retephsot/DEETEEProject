@@ -57,6 +57,7 @@ public class DefaultLoadingPage extends PageBase{
 		return testresults;
 	}
 	
+	//this method is no longer needed ** IssuesList no longer exists
 	public DefaultLoadingPage DownloadIssuesList() throws InterruptedException, AWTException
 	{
 				
@@ -82,6 +83,7 @@ public class DefaultLoadingPage extends PageBase{
 	}
 	
 	
+	//this method is no longer needed ** IssuesList no longer exists
 	public DefaultLoadingPage DownloadIssuesListFirefox() throws InterruptedException, AWTException
 	{
 				
