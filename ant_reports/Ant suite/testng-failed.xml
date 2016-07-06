@@ -5,12 +5,10 @@
     <classes>
       <class name="com.test1.tests.RTestChrome">
         <methods>
-          <include name="testSuccessfulAdminAddAttachment" invocation-numbers="0"/>
+          <include name="testSuccessfulLogOut" invocation-numbers="0"/>
           <include name="beforSuite"/>
           <include name="afterMethod"/>
-          <include name="testSuccessfulLogIn" invocation-numbers="3"/>
           <include name="beforeMethod"/>
-          <include name="testSuccessfulSumSheetDownLoadFiref" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.test1.tests.RTestChrome -->
     </classes>
