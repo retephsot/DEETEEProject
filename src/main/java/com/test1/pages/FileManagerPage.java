@@ -88,7 +88,7 @@ public class FileManagerPage extends PageBase{
 		return new BatchFileImportPage(driver);
 	}
 	
-	public SettingsPage clickSettingsLink(String mp) throws InterruptedException
+	public SettingsPage clickSettingsLink() throws InterruptedException
 	{
 		
 		//find the Action button and click
