@@ -25,7 +25,32 @@ public class RTestChrome extends TestBase
 
 {
 	
-	@Test (dataProvider = "dataProvider")
+	 @Test (dataProvider = "dataProvider")
+	  public void testSuccessfulNewAdminUserCreationDBcheck(String username, String password, String nusername, String status,
+			String role, String client, String telenumber, String email, String npassword, String confirmpw, String path,
+			String imgname) 
+					  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
+	  {
+		
+		//The entry point LogInPage object below can now be removed because its added to TestBase can now inherit this
+	    //LogInPage logInPage = new LogInPage(driver);
+		  
+		boolean testResult = loginpage.loginAsAdmin(username, password)
+									  .ClickManageUsersLink()
+									  .AddUser()
+									  .CreateNewUser(nusername, status, role, client, telenumber, email, npassword, confirmpw, path, imgname)
+									  .clickManageUsersPagelink()
+									  .isCreateUserSuccessfulCheckDB(nusername, email);
+	  
+		 System.out.println(testResult);	
+		 
+		 Assert.assertTrue(testResult, "The account for " + nusername + " has not been successfully created." );
+		 
+	  }
+	  
+	
+	
+	@Test (priority=2, dataProvider = "dataProvider")
 	  public void testSuccessfulNewClientCreationDBcheck(String username, String password, String clientname, String clientphone,
 			String clientext, String clientaddress, String clientcity, String clientstate, String clientzip) 
 					  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
@@ -45,7 +70,7 @@ public class RTestChrome extends TestBase
 		 
 	  }
 	  
-	  @Test (priority=2, dataProvider = "dataProvider")
+	  @Test (priority=3, dataProvider = "dataProvider")
 	  public void testSuccessfulNewClientCreation(String username, String password, String clientname, String clientphone,
 			String clientext, String clientaddress, String clientcity, String clientstate, String clientzip) 
 					  throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
@@ -66,7 +91,7 @@ public class RTestChrome extends TestBase
 		 
 	  }
 	
-	  @Test (priority=3, dataProvider = "dataProvider")
+	  @Test (priority=4, dataProvider = "dataProvider")
 	  public void testSuccessfulImportFileToClient(String username, String password, String clientname, String batchdate, String path, 
 			  String filename, String mapparcelnumber1, String mapparcelnumber2) throws InterruptedException, IOException, AWTException 
 	  {
@@ -84,7 +109,7 @@ public class RTestChrome extends TestBase
 		 
 	  }
 	  
-	  @Test (priority=4, dataProvider = "dataProvider")
+	  @Test (priority=5, dataProvider = "dataProvider")
 	  public void testSuccessfulAdminAddAttachment(String client, String username, String password, String mp, String filetitle, 
 			  String documentpath, String filename) throws InterruptedException, IOException, AWTException 
 	  {
@@ -102,7 +127,7 @@ public class RTestChrome extends TestBase
 		 
 	  }
 	  
-	  @Test (priority=5, dataProvider = "dataProvider")
+	  @Test (priority=6, dataProvider = "dataProvider")
 	  public void testSuccessfulAddAttachmentDBcheck(String client, String username, String password, String mp, String filetitle, 
 			  String documentpath, String filename) throws InterruptedException, IOException, AWTException, ClassNotFoundException, SQLException 
 	  {
@@ -123,7 +148,7 @@ public class RTestChrome extends TestBase
 
 	  
 
-	 @Test (priority=6, dataProvider = "dataProvider")
+	 @Test (priority=7, dataProvider = "dataProvider")
 	  public void testSuccessfulNewUserCreationDBcheck(String username, String password, String nusername, String status,
 			String role, String client, String telenumber, String email, String npassword, String confirmpw, String path,
 			String imgname) 
@@ -147,7 +172,7 @@ public class RTestChrome extends TestBase
 	  }
 	  
 	
-	 @Test (priority=7, dataProvider = "dataProvider")
+	 @Test (priority=8, dataProvider = "dataProvider")
 	  public void testSuccessfulNewUserCreate(String username, String password, String nusername, String status,
 			String role, String client, String telenumber, String email, String npassword, String confirmpw, String path,
 			String imgname) 
@@ -172,7 +197,7 @@ public class RTestChrome extends TestBase
 	  
 
 	
-  @Test (priority=8, dataProvider = "dataProvider")
+  @Test (priority=9, dataProvider = "dataProvider")
   public void testSuccessfulLogIn(String username, String password) 
 				  throws InterruptedException, IOException 
   {
@@ -190,7 +215,7 @@ public class RTestChrome extends TestBase
   }
   
 
-  @Test (priority=9, dataProvider = "dataProvider")
+  @Test (priority=10, dataProvider = "dataProvider")
   public void testSuccessfulLogOut(String username, String password) 
 				  throws InterruptedException, IOException 
   {
@@ -217,7 +242,7 @@ public class RTestChrome extends TestBase
 
   
   
-  @Test (priority=10, dataProvider = "dataProvider")
+  @Test (priority=11, dataProvider = "dataProvider")
   public void testSuccessfulSumSheetDownLoadFiref(String username, String password, String mp, String downloadPath, 
 		  String filename) throws InterruptedException, IOException, AWTException 
   {

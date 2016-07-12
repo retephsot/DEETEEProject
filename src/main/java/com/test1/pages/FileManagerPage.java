@@ -88,6 +88,14 @@ public class FileManagerPage extends PageBase{
 		return new BatchFileImportPage(driver);
 	}
 	
+	public SettingsPage clickSettingsLink() throws InterruptedException
+	{
+		
+		//find the Action button and click
+		driver.findElement(By.cssSelector("[ui-sref='settings-view']")).click();
+		
+		return new SettingsPage(driver);
+	}
 	
 	
 }
