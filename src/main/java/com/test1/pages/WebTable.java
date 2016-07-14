@@ -115,5 +115,17 @@ public class WebTable {
 		String rowXPath = "tbody/tr[contains(.,'" + rowText +"')]";
 		return _webTable.findElement(By.xpath(rowXPath));
 	}
+	
+	
+	public void clickCellElement(String cellText)
+	{
+		// Define xpath for a cell which contains specified text
+		// contains(., 'text') - represents a xpath function to check whether a element exist
+		String cellXPath = "tbody/tr/td[contains(.,'" + cellText +"')]";
+		WebElement element = _webTable.findElement(By.xpath(cellXPath));
+		
+		element.click();
+	}
+	
 
 }

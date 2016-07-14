@@ -31,46 +31,63 @@ public class SettingsPage extends PageBase{
 		//populate each month field
 		for(int i=1; i<13; i++)
 		{
+			int role =0;
+			int column = 0;
 			
 			System.out.println("This is loop " + i);
 			//click on the month field
 			driver.findElement(By.cssSelector("[placeholder='Month " + i + " Sale Date']")).click();
 			Thread.sleep(2000);
 			
-			
-			//print out the window count after clicking on the month field
-//			System.out.println("Window count after clicking on month sale date  : " + driver.getWindowHandles().size());
-//			
-//			Iterator<String> whs = driver.getWindowHandles().iterator();
-//			
-//			String mainWin = whs.next();
-//			String detailViewWin = whs.next();
-//			
-//			driver.switchTo().window(detailViewWin);
 			//to select the month
 			for(int j=0; j<i; j++)
 			{
+				
+				if (j >= 0 && j <=1)
+				{
+					role = 1;
+				}
+				if (j >= 2 && j <=3)
+				{
+					role =2;
+				}
+				if (j >=4 && j <=5)
+				{
+					role =3;
+				}
+				if (j >= 6 && j <= 7 )
+				{
+					role = 4;
+				}
+				if (j >= 8 && j <= 9)
+				{
+					role =5;
+				}
+				if (j >=10 && j <=11)
+				{
+					role =6;
+				}
+				if ((j==0) ||(j%2 == 0))
+				{
+					column = 1;
+				}
+				if ((j==1) || (j%2 !=0))
+				{
+					column =2;
+				}
+
 				if(j>0)
 				{
+					String rolestr = Integer.toString(role);	
+					String columnstr = Integer.toString(column);
+					Thread.sleep(1000);
 										
-					Thread.sleep(2000);
-					
-					//click on today link to get focus on the calendar pop-up
-					driver.findElement(By.xpath("//div[@class='picker picker--opened picker--focused']"
-							+ "/div/div/div/div/div[3]/button")).click();
-					
-					//to get focus on the calendar popup
-					//driver.findElement(By.xpath("//div[@class='picker picker--opened picker--focused']"
-					//		+ "/div/div/div/div/div[2]/div")).click();
-					
-					
-					
-					Thread.sleep(3000);
 					//to click on the next month arrow button
-					driver.findElement(By.xpath("//div[@class='picker picker--opened "
-							+ "picker--focused']/div/div/div/div/div[2]/div/div[4]")).click();
+					driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
+							+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/"
+									+ "div[2]/div/div[4]")).click();
 				}
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 			}
 			
 			//to select the day
@@ -122,26 +139,69 @@ public class SettingsPage extends PageBase{
 			{
 				dayinput = day12;
 			}
-			driver.findElement(By.xpath("//div[contains(@class, 'picker__day picker__day--infocus') and "
-					+ "text() ='" + dayinput + "']")).click();
+			
+//			driver.findElement(By.xpath("//div[contains(@class, 'picker__day picker__day--infocus') and "
+//					+ "text() ='" + dayinput + "']")).click();
+			
 			
 			Thread.sleep(2000);
 			
-			driver.findElement(By.xpath("//div[contains(@class, 'picker__day picker__day--infocus') and "
-					+ "text() ='" + dayinput + "']")).click();
+			if (i >= 1 && i <=2)
+			{
+				role = 1;
+			}
+			if (i >= 3 && i <=4)
+			{
+				role =2;
+			}
+			if (i >=5 && i <=6)
+			{
+				role =3;
+			}
+			if (i >= 7 && i <= 8 )
+			{
+				role = 4;
+			}
+			if (i >= 9 && i <= 10)
+			{
+				role =5;
+			}
+			if (i >=11 && i <=12)
+			{
+				role =6;
+			}
+			if (i==1 ||i%2 != 0)
+			{
+				column = 1;
+			}
+			if (i==2 || i%2 ==0)
+			{
+				column =2;
+			}
+			
+			Thread.sleep(3000);
+
+			String rolestr = Integer.toString(role);	
+			String columnstr = Integer.toString(column);
+			
+			//using webtable to find day value
+			WebTable table = new WebTable(driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
+					+ "/div[" + rolestr + "]/div[" + columnstr + "]"
+							+ "/div/div/div/div/div/div/div[2]/table")));
+			
 			Thread.sleep(3000);
 			
-			//to get focus on the calendar popup
-//			driver.findElement(By.xpath("//div[@class='picker picker--opened picker--focused']"
-//					+ "/div/div/div/div/div[3]")).click();
+			table.clickCellElement(dayinput);
 			
-			Thread.sleep(2000);
+			System.out.println("The day value has been selected.");
+			
+			Thread.sleep(3000);
 			
 			//find the close link and click
-			driver.findElement(By.xpath("//div[@class='picker picker--opened picker--focused']"
-					+ "/div/div/div/div/div[3]/button[3]")).click();
+			driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
+					+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/div[3]/button[3]")).click();
 			
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			
 		}
 		
