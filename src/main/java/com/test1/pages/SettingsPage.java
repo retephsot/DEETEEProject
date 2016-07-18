@@ -37,10 +37,10 @@ public class SettingsPage extends PageBase{
 			System.out.println("This is loop " + i);
 			//click on the month field
 			driver.findElement(By.cssSelector("[placeholder='Month " + i + " Sale Date']")).click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			//to select the month
-			for(int j=0; j<i; j++)
+			for(int j=i-1; j<i; j++)
 			{
 				
 				if (j >= 0 && j <=1)
@@ -78,16 +78,27 @@ public class SettingsPage extends PageBase{
 
 				if(j>0)
 				{
+					
+					for(int k =1; k < i; k++)
+					{
 					String rolestr = Integer.toString(role);	
 					String columnstr = Integer.toString(column);
 					Thread.sleep(1000);
-										
+					
+			
 					//to click on the next month arrow button
+					//print out the xpath being used
+//					System.out.println("The xpath being used is " + "//form[@ng-submit='ctrl.confirmModal()']"
+//							+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/"
+//									+ "div[2]/div/div[4]");
+					
 					driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
 							+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/"
 									+ "div[2]/div/div[4]")).click();
+					}
+					
 				}
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			}
 			
 			//to select the day
@@ -144,7 +155,7 @@ public class SettingsPage extends PageBase{
 //					+ "text() ='" + dayinput + "']")).click();
 			
 			
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			if (i >= 1 && i <=2)
 			{
@@ -179,23 +190,32 @@ public class SettingsPage extends PageBase{
 				column =2;
 			}
 			
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 
 			String rolestr = Integer.toString(role);	
 			String columnstr = Integer.toString(column);
+			
+			//print out the xpath used for find the day
+//			System.out.println("the xpath being used is " + "//form[@ng-submit='ctrl.confirmModal()']"
+//					+ "/div[" + rolestr + "]/div[" + columnstr + "]"
+//							+ "/div/div/div/div/div/div/div[2]/table");
 			
 			//using webtable to find day value
 			WebTable table = new WebTable(driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
 					+ "/div[" + rolestr + "]/div[" + columnstr + "]"
 							+ "/div/div/div/div/div/div/div[2]/table")));
 			
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			
 			table.clickCellElement(dayinput);
 			
-			System.out.println("The day value has been selected.");
+			//System.out.println("The day value has been selected.");
 			
-			Thread.sleep(3000);
+			Thread.sleep(2000);
+			
+			//print the xpath being used to click the close button
+//			System.out.println("the xpath being used to find the close button is " + "//form[@ng-submit='ctrl.confirmModal()']"
+//					+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/div[3]/button[3]");
 			
 			//find the close link and click
 			driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
@@ -205,30 +225,117 @@ public class SettingsPage extends PageBase{
 			
 		}
 		
+		//click the "Add Sale Dates" button
+		driver.findElement(By.xpath("//button[contains(@class, 'right button btn green-btn') "
+				+ "and text() = 'Add Sale Dates']")).click();
+		
+		Thread.sleep(2000);
+		
+		System.out.println("The Add Sale Dates button has been clicked");
+		
+		Thread.sleep(1000);
+		
+		driver.navigate().refresh();
+		
+		Thread.sleep(6000);
+		
 		return new SettingsPage(driver);
 	}
 	
 	
-	public boolean isAddSaleDateSuccessful () throws InterruptedException
+	public boolean isAddSaleDateSuccessful (String day1, String day2, String day3, String day4, String day5, String day6,
+			String day7, String day8, String day9, String day10, String day11,
+			String day12) throws InterruptedException
 	{
-		String expectedstr = "Sale Date";
+		
+		String actualstr = "";
+		String dayinput = "";
+		
+		boolean testresults = true;
 		
 		
-		Thread.sleep(1000);
 		
-		boolean testresults;
+		System.out.println("print out the value of the Global Batches table " + 
+				driver.findElement(By.xpath("//div[@class='ui-grid-contents-wrapper']/div/div[2]"))
+		.getText());
 		
-		testresults = driver.findElement(By.cssSelector("[ui-grid-one-bind-id-grid='col.uid + '-header-text'']"))
-				.getText().contains(expectedstr);
+		Thread.sleep(4000);
 		
+		actualstr = driver.findElement(By.xpath("//div[@class='ui-grid-contents-wrapper']/div/div[2]"))
+				.getText();
+		
+	
         Thread.sleep(1000);
+        
+        for(int i = 1; i < 13; i++)
+        {
+        
+        	if (i == 1)
+    		{
+    			dayinput = day1;
+    		}
+    		if (i == 2)
+    		{
+    			dayinput = day2;
+    		}
+    		if (i == 3)
+    		{
+    			dayinput = day3;
+    		}
+    		if (i == 4)
+    		{
+    			dayinput = day4;
+    		}
+    		if (i == 5)
+    		{
+    			dayinput = day5;
+    		}
+    		if (i == 6)
+    		{
+    			dayinput = day6;
+    		}
+    		if (i == 7)
+    		{
+    			dayinput = day7;
+    		}
+    		if (i == 8)
+    		{
+    			dayinput = day8;
+    		}
+    		if (i == 9)
+    		{
+    			dayinput = day9;
+    		}
+    		if (i == 10)
+    		{
+    			dayinput = day10;
+    		}
+    		if (i == 11)
+    		{
+    			dayinput = day11;
+    		}
+    		if (i == 12)
+    		{
+    			dayinput = day12;
+    		}
+    		
+        testresults = actualstr.contains(dayinput);
 		
 		System.out.println(testresults);
+		
+		if(testresults == false)
+		{
+			testresults = false;
+			break;
+		}
+		
+        }
 		
 		Thread.sleep(1000);
 		
 		return testresults;
 	}
+	
 	
 	
 	

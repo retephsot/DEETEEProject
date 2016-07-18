@@ -92,11 +92,15 @@ public class TestBase
 	 
 	
 	 @AfterMethod
-	  public void afterMethod() 
+	  public void afterMethod() throws InterruptedException 
 	  {
 		 //since we are inheriting from WebDriverHelper to close or tear down we need the below
 		 WebDriverHelper.quitDriver(driver);
-		 // driver.close();
+		 
+		 Thread.sleep(2000);
+		 // enable below once sendreport method has been created
+		 //WebDriverHelper.sendreport();
+		 
 	  }
 	
 }

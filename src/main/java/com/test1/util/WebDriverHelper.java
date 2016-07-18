@@ -1,10 +1,26 @@
 package com.test1.util;
 
 import java.awt.Toolkit;
+import java.net.PasswordAuthentication;
 import java.security.InvalidParameterException;
 import java.util.HashMap;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import java.util.Properties;
+
+import javax.activation.*;
+import javax.mail.BodyPart;
+import javax.mail.MessagingException;
+import javax.mail.Multipart;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+
+import org.eclipse.jetty.http.HttpTester.Message;
+import org.openqa.jetty.jetty.servlet.SessionManager.Session;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -116,5 +132,14 @@ public class WebDriverHelper
 		driver.quit();
 	}
 	
+	// email test result portion
+//	public static void sendreport()
+//	   {
+//
+//		String path="C:\\Users\\jslee\\workspace\\DTS1\\ant_reports\\emailable-report.html";
+//
+//
+//		    
+//	   }
 	
 }

@@ -12,5 +12,15 @@
 	<classpathentry kind="lib" path="C:/seleniumJar/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="C:/seleniumJar/selenium-server-standalone-2.53.0.jar" sourcepath="C:/seleniumJar"/>
 	<classpathentry kind="lib" path="C:/seleniumJar/libs/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/activation.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/additionnal.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/javamail-connector-4.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/javamail-smtp-1.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/pop3.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/smtp.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/javaee.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/javamail-1.4.5/mail.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/mailapi.jar"/>
+	<classpathentry kind="lib" path="C:/seleniumJar/MailJars/javax.mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
