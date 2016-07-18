@@ -34,7 +34,7 @@ public class TestSuccessfulAddSaleDates extends TestBase
 	boolean testResult = loginpage.loginAsAdmin(username, password)
 								  .clickSettingsLink()
 								  .AddBatches(day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11, day12)
-								  .isAddSaleDateSuccessful(); 
+								  .isAddSaleDateSuccessful();
   
 	 System.out.println(testResult);	
 	 

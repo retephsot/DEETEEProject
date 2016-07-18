@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57309" started-at="2016-07-13T21:41:58Z" finished-at="2016-07-13T21:42:55Z">
+  <suite name="Default suite" duration-ms="222690" started-at="2016-07-18T14:17:52Z" finished-at="2016-07-18T14:21:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57309" started-at="2016-07-13T21:41:58Z" finished-at="2016-07-13T21:42:55Z">
+    <test name="Default test" duration-ms="222690" started-at="2016-07-18T14:17:52Z" finished-at="2016-07-18T14:21:35Z">
       <class name="com.test1.tests.TestSuccessfulAddSaleDates">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@483bf400]" name="beforSuite" is-config="true" duration-ms="20" started-at="2016-07-13T17:41:58Z" finished-at="2016-07-13T17:41:58Z">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="beforSuite" is-config="true" duration-ms="10" started-at="2016-07-18T10:17:52Z" finished-at="2016-07-18T10:17:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@483bf400]" name="beforeMethod" is-config="true" duration-ms="4058" started-at="2016-07-13T17:41:58Z" finished-at="2016-07-13T17:42:02Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="beforeMethod" is-config="true" duration-ms="4694" started-at="2016-07-18T10:17:53Z" finished-at="2016-07-18T10:17:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testSuccessfulAddSaleDates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@483bf400]" name="testSuccessfulAddSaleDates" duration-ms="51571" started-at="2016-07-13T17:42:02Z" data-provider="dataProvider" finished-at="2016-07-13T17:42:54Z">
+        <test-method status="FAIL" signature="testSuccessfulAddSaleDates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="testSuccessfulAddSaleDates" duration-ms="214231" started-at="2016-07-18T10:17:58Z" data-provider="dataProvider" finished-at="2016-07-18T10:21:32Z">
           <params>
             <param index="0">
               <value>
@@ -29,98 +29,75 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[15]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[15]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[15]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[16]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[16]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[16]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[17]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[17]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="10">
               <value>
-                <![CDATA[17]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="11">
               <value>
-                <![CDATA[18]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="12">
               <value>
-                <![CDATA[18]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="13">
               <value>
-                <![CDATA[18]]>
+                <![CDATA[20]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element not visible
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'E5530-2340', ip: '10.0.0.33', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir10412_11320}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 56fe98012afebb7ebe6d171e3fc257e3]]>
+              <![CDATA[The sale dates have not been successfully added. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'E5530-2340', ip: '10.0.0.33', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\jslee\AppData\Local\Temp\scoped_dir10412_11320}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 56fe98012afebb7ebe6d171e3fc257e3
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at com.test1.pages.SettingsPage.AddBatches(SettingsPage.java:88)
-	at com.test1.tests.TestSuccessfulAddSaleDates.testSuccessfulAddSaleDates(TestSuccessfulAddSaleDates.java:36)
+              <![CDATA[java.lang.AssertionError: The sale dates have not been successfully added. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.test1.tests.TestSuccessfulAddSaleDates.testSuccessfulAddSaleDates(TestSuccessfulAddSaleDates.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -147,11 +124,11 @@ Session ID: 56fe98012afebb7ebe6d171e3fc257e3
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulAddSaleDates -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@483bf400]" name="afterMethod" is-config="true" duration-ms="1016" started-at="2016-07-13T17:42:54Z" finished-at="2016-07-13T17:42:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="afterMethod" is-config="true" duration-ms="3105" started-at="2016-07-18T10:21:32Z" finished-at="2016-07-18T10:21:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

@@ -37,10 +37,10 @@ public class SettingsPage extends PageBase{
 			System.out.println("This is loop " + i);
 			//click on the month field
 			driver.findElement(By.cssSelector("[placeholder='Month " + i + " Sale Date']")).click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			//to select the month
-			for(int j=0; j<i; j++)
+			for(int j=i-1; j<i; j++)
 			{
 				
 				if (j >= 0 && j <=1)
@@ -78,16 +78,27 @@ public class SettingsPage extends PageBase{
 
 				if(j>0)
 				{
+					
+					for(int k =1; k < i; k++)
+					{
 					String rolestr = Integer.toString(role);	
 					String columnstr = Integer.toString(column);
 					Thread.sleep(1000);
-										
+					
+			
 					//to click on the next month arrow button
+					//print out the xpath being used
+					System.out.println("The xpath being used is " + "//form[@ng-submit='ctrl.confirmModal()']"
+							+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/"
+									+ "div[2]/div/div[4]");
+					
 					driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
 							+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/"
 									+ "div[2]/div/div[4]")).click();
+					}
+					
 				}
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			}
 			
 			//to select the day
@@ -144,7 +155,7 @@ public class SettingsPage extends PageBase{
 //					+ "text() ='" + dayinput + "']")).click();
 			
 			
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			if (i >= 1 && i <=2)
 			{
@@ -179,23 +190,32 @@ public class SettingsPage extends PageBase{
 				column =2;
 			}
 			
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 
 			String rolestr = Integer.toString(role);	
 			String columnstr = Integer.toString(column);
+			
+			//print out the xpath used for find the day
+			System.out.println("the xpath being used is " + "//form[@ng-submit='ctrl.confirmModal()']"
+					+ "/div[" + rolestr + "]/div[" + columnstr + "]"
+							+ "/div/div/div/div/div/div/div[2]/table");
 			
 			//using webtable to find day value
 			WebTable table = new WebTable(driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
 					+ "/div[" + rolestr + "]/div[" + columnstr + "]"
 							+ "/div/div/div/div/div/div/div[2]/table")));
 			
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			
 			table.clickCellElement(dayinput);
 			
 			System.out.println("The day value has been selected.");
 			
-			Thread.sleep(3000);
+			Thread.sleep(2000);
+			
+			//print the xpath being used to click the close button
+			System.out.println("the xpath being used to find the close button is " + "//form[@ng-submit='ctrl.confirmModal()']"
+					+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/div[3]/button[3]");
 			
 			//find the close link and click
 			driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
@@ -205,6 +225,20 @@ public class SettingsPage extends PageBase{
 			
 		}
 		
+		//click the "Add Sale Dates" button
+		driver.findElement(By.xpath("//button[contains(@class, 'right button btn green-btn') "
+				+ "and text() = 'Add Sale Dates']")).click();
+		
+		Thread.sleep(2000);
+		
+		System.out.println("The Add Sale Dates button has been clicked");
+		
+		Thread.sleep(1000);
+		
+		driver.navigate().refresh();
+		
+		Thread.sleep(6000);
+		
 		return new SettingsPage(driver);
 	}
 	
@@ -212,16 +246,21 @@ public class SettingsPage extends PageBase{
 	public boolean isAddSaleDateSuccessful () throws InterruptedException
 	{
 		String expectedstr = "Sale Date";
-		
-		
-		Thread.sleep(1000);
+		String actualstr = "";
 		
 		boolean testresults;
 		
-		testresults = driver.findElement(By.cssSelector("[ui-grid-one-bind-id-grid='col.uid + '-header-text'']"))
-				.getText().contains(expectedstr);
+		actualstr = driver.findElement(By.cssSelector("[ui-grid-one-bind-id-grid='col.uid + "
+				+ "'-header-text'']")).getText();
+		
+		Thread.sleep(1000);
+		
+		System.out.println("The value of 'actualstr' is " + actualstr);
+		
 		
         Thread.sleep(1000);
+        
+        testresults = actualstr.equals(expectedstr);
 		
 		System.out.println(testresults);
 		
@@ -229,6 +268,7 @@ public class SettingsPage extends PageBase{
 		
 		return testresults;
 	}
+	
 	
 	
 	
