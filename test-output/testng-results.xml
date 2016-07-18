@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="222690" started-at="2016-07-18T14:17:52Z" finished-at="2016-07-18T14:21:35Z">
+  <suite name="Default suite" duration-ms="227665" started-at="2016-07-18T14:57:52Z" finished-at="2016-07-18T15:01:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="222690" started-at="2016-07-18T14:17:52Z" finished-at="2016-07-18T14:21:35Z">
+    <test name="Default test" duration-ms="227665" started-at="2016-07-18T14:57:52Z" finished-at="2016-07-18T15:01:40Z">
       <class name="com.test1.tests.TestSuccessfulAddSaleDates">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="beforSuite" is-config="true" duration-ms="10" started-at="2016-07-18T10:17:52Z" finished-at="2016-07-18T10:17:52Z">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="beforSuite" is-config="true" duration-ms="12" started-at="2016-07-18T10:57:52Z" finished-at="2016-07-18T10:57:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="beforeMethod" is-config="true" duration-ms="4694" started-at="2016-07-18T10:17:53Z" finished-at="2016-07-18T10:17:58Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="beforeMethod" is-config="true" duration-ms="4680" started-at="2016-07-18T10:57:53Z" finished-at="2016-07-18T10:57:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testSuccessfulAddSaleDates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="testSuccessfulAddSaleDates" duration-ms="214231" started-at="2016-07-18T10:17:58Z" data-provider="dataProvider" finished-at="2016-07-18T10:21:32Z">
+        <test-method status="PASS" signature="testSuccessfulAddSaleDates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="testSuccessfulAddSaleDates" duration-ms="219203" started-at="2016-07-18T10:57:58Z" data-provider="dataProvider" finished-at="2016-07-18T11:01:37Z">
           <params>
             <param index="0">
               <value>
@@ -88,47 +88,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The sale dates have not been successfully added. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The sale dates have not been successfully added. expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.test1.tests.TestSuccessfulAddSaleDates.testSuccessfulAddSaleDates(TestSuccessfulAddSaleDates.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulAddSaleDates -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="afterMethod" is-config="true" duration-ms="3105" started-at="2016-07-18T10:21:32Z" finished-at="2016-07-18T10:21:35Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="afterMethod" is-config="true" duration-ms="3137" started-at="2016-07-18T11:01:37Z" finished-at="2016-07-18T11:01:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
