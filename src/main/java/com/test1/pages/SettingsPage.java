@@ -88,9 +88,9 @@ public class SettingsPage extends PageBase{
 			
 					//to click on the next month arrow button
 					//print out the xpath being used
-//					System.out.println("The xpath being used is " + "//form[@ng-submit='ctrl.confirmModal()']"
-//							+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/"
-//									+ "div[2]/div/div[4]");
+					System.out.println("The xpath being used is " + "//form[@ng-submit='ctrl.confirmModal()']"
+							+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/"
+									+ "div[2]/div/div[4]");
 					
 					driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
 							+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/"
@@ -151,8 +151,6 @@ public class SettingsPage extends PageBase{
 				dayinput = day12;
 			}
 			
-//			driver.findElement(By.xpath("//div[contains(@class, 'picker__day picker__day--infocus') and "
-//					+ "text() ='" + dayinput + "']")).click();
 			
 			
 			Thread.sleep(1000);
@@ -196,9 +194,9 @@ public class SettingsPage extends PageBase{
 			String columnstr = Integer.toString(column);
 			
 			//print out the xpath used for find the day
-//			System.out.println("the xpath being used is " + "//form[@ng-submit='ctrl.confirmModal()']"
-//					+ "/div[" + rolestr + "]/div[" + columnstr + "]"
-//							+ "/div/div/div/div/div/div/div[2]/table");
+			System.out.println("the xpath being used is " + "//form[@ng-submit='ctrl.confirmModal()']"
+					+ "/div[" + rolestr + "]/div[" + columnstr + "]"
+							+ "/div/div/div/div/div/div/div[2]/table");
 			
 			//using webtable to find day value
 			WebTable table = new WebTable(driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
@@ -209,13 +207,13 @@ public class SettingsPage extends PageBase{
 			
 			table.clickCellElement(dayinput);
 			
-			//System.out.println("The day value has been selected.");
+			System.out.println("The day value has been selected.");
 			
 			Thread.sleep(2000);
 			
 			//print the xpath being used to click the close button
-//			System.out.println("the xpath being used to find the close button is " + "//form[@ng-submit='ctrl.confirmModal()']"
-//					+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/div[3]/button[3]");
+			System.out.println("the xpath being used to find the close button is " + "//form[@ng-submit='ctrl.confirmModal()']"
+					+ "/div[" + rolestr + "]/div[" + columnstr + "]/div/div/div/div/div/div/div[3]/button[3]");
 			
 			//find the close link and click
 			driver.findElement(By.xpath("//form[@ng-submit='ctrl.confirmModal()']"
