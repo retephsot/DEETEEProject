@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import com.test1.pages.LogInPage;
+import com.test1.util.SendMail;
+
 import org.testng.annotations.BeforeMethod;
 import java.awt.Toolkit;
 import java.io.IOException;
@@ -24,7 +26,7 @@ public class TestSuccessfulLogIn extends TestBase
 
   @Test (dataProvider = "dataProvider")
   public void testSuccessfulLogIn(String username, String password) 
-				  throws InterruptedException, IOException 
+				  throws Exception 
   {
 	
 	//The entry point LogInPage object below can now be removed because its added to TestBase can now inherit this
@@ -37,6 +39,7 @@ public class TestSuccessfulLogIn extends TestBase
 	 
 	 Assert.assertTrue(testResult, "Login is not successful for username " + username );
 	 
+		 
   }
   
  
