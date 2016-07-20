@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Ant_suite">
-              <span class="suite-name border-passed">Ant suite</span>
+              <span class="suite-name border-failed">Ant suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">25 methods, 4 failed,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Ant_suite" class="hide-methods failed suite-Ant_suite"> (hide)</a> <!-- hide-methods failed suite-Ant_suite -->
+                      <a href="#" panel-name="suite-Ant_suite" class="show-methods failed suite-Ant_suite"> (show)</a> <!-- show-methods failed suite-Ant_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Ant_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogIn(NewParaUserD3, password1)">testSuccessfulLogIn(NewParaUserD3, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogIn(NewAdminUserD3, password1)">testSuccessfulLogIn(NewAdminUserD3, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewParaUserD2, Active, Paralegal, nothing, 771.111.2222, parauserd3@testing.com, ...)">testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewParaUserD2, Active, Paralegal, nothing, 771.111.2222, parauserd3@testing.com, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewAdminUserD2, Active, Admin, nothing, 402.222.3333, newadminuserd3@testing.com,...)">testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewAdminUserD2, Active, Admin, nothing, 402.222.3333, newadminuserd3@testing.com,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Ant_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,27 +130,107 @@
                     <div class="method-list-content passed suite-Ant_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogIn(NewClientUserD1, password1)">testSuccessfulLogIn(NewClientUserD1, password1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulAddAttachmentDBcheck(Client7.20b.16C, Json Lee, password1, 7.20b.16002, addingAttachm7.20b, C:\\testfolder\\, gb1.jpg)">testSuccessfulAddAttachmentDBcheck(Client7.20b.16C, Json Lee, password1, 7.20b.16002, addingAttachm7.20b, C:\\testfolder\\, gb1.jpg)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogIn(NewDataEntryUserD1, password1)">testSuccessfulLogIn(NewDataEntryUserD1, password1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16004, addRockman7.20b, C:\\testfolder\\, rock1.jpg)">testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16004, addRockman7.20b, C:\\testfolder\\, rock1.jpg)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogIn(NewAdminUserD1, password1)">testSuccessfulLogIn(NewAdminUserD1, password1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16003, attachDocument7.20b, C:\\testfolder\\, golgo13.PN...)">testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16003, attachDocument7.20b, C:\\testfolder\\, golgo13.PN...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogIn(NewParaUserD1, password1)">testSuccessfulLogIn(NewParaUserD1, password1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulAddSaleDates(sysadmin, 123456, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18)">testSuccessfulAddSaleDates(sysadmin, 123456, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogOut(NewClientUserD1, password1)">testSuccessfulLogOut(NewClientUserD1, password1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingAttach7.20b, C:\\testfolder\\, rock1.jpg)">testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingAttach7.20b, C:\\testfolder\\, rock1.jpg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attach7.20b, C:\\testfolder\\, gb3.jpg)">testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attach7.20b, C:\\testfolder\\, gb3.jpg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attaching7.20b, C:\\testfolder\\, kiar3.jpg)">testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attaching7.20b, C:\\testfolder\\, kiar3.jpg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingDoc7.20b, C:\\testfolder\\, TestCertInput1....)">testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingDoc7.20b, C:\\testfolder\\, TestCertInput1....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16C, Dec 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bC.xlsx, 7...)">testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16C, Dec 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bC.xlsx, 7...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16B, Nov 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bD.xlsx, 7...)">testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16B, Nov 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bD.xlsx, 7...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogIn(NewDataEntryUserD3, password1)">testSuccessfulLogIn(NewDataEntryUserD3, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogIn(NewClientUserD3, password1)">testSuccessfulLogIn(NewClientUserD3, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulLogOut(NewClientUserD3, password1)">testSuccessfulLogOut(NewClientUserD3, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewAdminUserCreationDBcheck(sysadmin, 123456, Jn Lee, Active, Admin, nothing, 777.123.2222, jnadmin3@admintesting.com, password1...)">testSuccessfulNewAdminUserCreationDBcheck(sysadmin, 123456, Jn Lee, Active, Admin, nothing, 777.123.2222, jnadmin3@admintesting.com, password1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16B, 121-790-1030, 0, 118022 Small Road Dr., Avondale, GA, 23004)">testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16B, 121-790-1030, 0, 118022 Small Road Dr., Avondale, GA, 23004)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16A, 771-311-9900, 123, 112022 H Street Dr., Doraville, GA, 30023)">testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16A, 771-311-9900, 123, 112022 H Street Dr., Doraville, GA, 30023)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16D, 671-328-4440, 4562, 82 H St., Marietta, GA, 30022)">testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16D, 671-328-4440, 4562, 82 H St., Marietta, GA, 30022)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16C, 401-118-2220, 1234, 8 Dog Town Dr., Atlanta, GA, 32299)">testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16C, 401-118-2220, 1234, 8 Dog Town Dr., Atlanta, GA, 32299)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewUserCreate(Jn Lee, password1, NewClientUserD3, Active, Client, Client7.20b.16B, 770.330.1111, newclientD3@user....)">testSuccessfulNewUserCreate(Jn Lee, password1, NewClientUserD3, Active, Client, Client7.20b.16B, 770.330.1111, newclientD3@user....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulNewUserCreate(Jn Lee, password1, NewDataEntryUserD3, Active, Data Entry, nothing, 774.999.3456, newdataentryuserD3...)">testSuccessfulNewUserCreate(Jn Lee, password1, NewDataEntryUserD3, Active, Data Entry, nothing, 774.999.3456, newdataentryuserD3...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ant_suite" title="com.test1.tests.RTestChrome" hash-for-method="testSuccessfulSumSheetDownLoadFiref(NewClientUserD3, password1, 7.20b.16003, C:\\testfolder\\SeleniumDownloads, golgo13.PNG)">testSuccessfulSumSheetDownLoadFiref(NewClientUserD3, password1, 7.20b.16003, C:\\testfolder\\SeleniumDownloads, golgo13.PNG)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Ant_suite -->
@@ -136,6 +245,62 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Ant_suite" class="panel Ant_suite">
+          <div class="suite-Ant_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test1.tests.RTestChrome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulLogIn(NewParaUserD3, password1)">
+                  </a> <!-- testSuccessfulLogIn(NewParaUserD3, password1) -->
+                  <span class="method-name">testSuccessfulLogIn</span>
+                  <span class="parameters">(NewParaUserD3, password1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login is not successful for username NewParaUserD3 expected [true] but found [false]
+	at com.test1.tests.RTestChrome.testSuccessfulLogIn(RTestChrome.java:235)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulLogIn(NewAdminUserD3, password1)">
+                  </a> <!-- testSuccessfulLogIn(NewAdminUserD3, password1) -->
+                  <span class="method-name">testSuccessfulLogIn</span>
+                  <span class="parameters">(NewAdminUserD3, password1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login is not successful for username NewAdminUserD3 expected [true] but found [false]
+	at com.test1.tests.RTestChrome.testSuccessfulLogIn(RTestChrome.java:235)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewParaUserD2, Active, Paralegal, nothing, 771.111.2222, parauserd3@testing.com, ...)">
+                  </a> <!-- testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewParaUserD2, Active, Paralegal, nothing, 771.111.2222, parauserd3@testing.com, ...) -->
+                  <span class="method-name">testSuccessfulNewUserCreationDBcheck</span>
+                  <span class="parameters">(Jn Lee, password1, NewParaUserD2, Active, Paralegal, nothing, 771.111.2222, parauserd3@testing.com, password1, password1, C:\\testfolder\\, parauser1.jpg)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The account for NewParaUserD2 has not been successfully created. expected [true] but found [false]
+	at com.test1.tests.RTestChrome.testSuccessfulNewUserCreationDBcheck(RTestChrome.java:192)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewAdminUserD2, Active, Admin, nothing, 402.222.3333, newadminuserd3@testing.com,...)">
+                  </a> <!-- testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewAdminUserD2, Active, Admin, nothing, 402.222.3333, newadminuserd3@testing.com,...) -->
+                  <span class="method-name">testSuccessfulNewUserCreationDBcheck</span>
+                  <span class="parameters">(Jn Lee, password1, NewAdminUserD2, Active, Admin, nothing, 402.222.3333, newadminuserd3@testing.com, password1, password1, C:\\testfolder\\, admin1.jpg)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The account for NewAdminUserD2 has not been successfully created. expected [true] but found [false]
+	at com.test1.tests.RTestChrome.testSuccessfulNewUserCreationDBcheck(RTestChrome.java:192)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ant_suite-class-failed -->
           <div class="suite-Ant_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -144,42 +309,170 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSuccessfulLogIn(NewClientUserD1, password1)">
-                  </a> <!-- testSuccessfulLogIn(NewClientUserD1, password1) -->
-                  <span class="method-name">testSuccessfulLogIn</span>
-                  <span class="parameters">(NewClientUserD1, password1)</span>
+                  <a name="testSuccessfulAddAttachmentDBcheck(Client7.20b.16C, Json Lee, password1, 7.20b.16002, addingAttachm7.20b, C:\\testfolder\\, gb1.jpg)">
+                  </a> <!-- testSuccessfulAddAttachmentDBcheck(Client7.20b.16C, Json Lee, password1, 7.20b.16002, addingAttachm7.20b, C:\\testfolder\\, gb1.jpg) -->
+                  <span class="method-name">testSuccessfulAddAttachmentDBcheck</span>
+                  <span class="parameters">(Client7.20b.16C, Json Lee, password1, 7.20b.16002, addingAttachm7.20b, C:\\testfolder\\, gb1.jpg)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSuccessfulLogIn(NewDataEntryUserD1, password1)">
-                  </a> <!-- testSuccessfulLogIn(NewDataEntryUserD1, password1) -->
-                  <span class="method-name">testSuccessfulLogIn</span>
-                  <span class="parameters">(NewDataEntryUserD1, password1)</span>
+                  <a name="testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16004, addRockman7.20b, C:\\testfolder\\, rock1.jpg)">
+                  </a> <!-- testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16004, addRockman7.20b, C:\\testfolder\\, rock1.jpg) -->
+                  <span class="method-name">testSuccessfulAddAttachmentDBcheck</span>
+                  <span class="parameters">(Client7.20b.16B, Json Lee, password1, 7.20b.16004, addRockman7.20b, C:\\testfolder\\, rock1.jpg)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSuccessfulLogIn(NewAdminUserD1, password1)">
-                  </a> <!-- testSuccessfulLogIn(NewAdminUserD1, password1) -->
-                  <span class="method-name">testSuccessfulLogIn</span>
-                  <span class="parameters">(NewAdminUserD1, password1)</span>
+                  <a name="testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16003, attachDocument7.20b, C:\\testfolder\\, golgo13.PN...)">
+                  </a> <!-- testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16003, attachDocument7.20b, C:\\testfolder\\, golgo13.PN...) -->
+                  <span class="method-name">testSuccessfulAddAttachmentDBcheck</span>
+                  <span class="parameters">(Client7.20b.16B, Json Lee, password1, 7.20b.16003, attachDocument7.20b, C:\\testfolder\\, golgo13.PNG)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSuccessfulLogIn(NewParaUserD1, password1)">
-                  </a> <!-- testSuccessfulLogIn(NewParaUserD1, password1) -->
-                  <span class="method-name">testSuccessfulLogIn</span>
-                  <span class="parameters">(NewParaUserD1, password1)</span>
+                  <a name="testSuccessfulAddSaleDates(sysadmin, 123456, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18)">
+                  </a> <!-- testSuccessfulAddSaleDates(sysadmin, 123456, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18) -->
+                  <span class="method-name">testSuccessfulAddSaleDates</span>
+                  <span class="parameters">(sysadmin, 123456, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSuccessfulLogOut(NewClientUserD1, password1)">
-                  </a> <!-- testSuccessfulLogOut(NewClientUserD1, password1) -->
+                  <a name="testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingAttach7.20b, C:\\testfolder\\, rock1.jpg)">
+                  </a> <!-- testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingAttach7.20b, C:\\testfolder\\, rock1.jpg) -->
+                  <span class="method-name">testSuccessfulAdminAddAttachment</span>
+                  <span class="parameters">(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingAttach7.20b, C:\\testfolder\\, rock1.jpg)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attach7.20b, C:\\testfolder\\, gb3.jpg)">
+                  </a> <!-- testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attach7.20b, C:\\testfolder\\, gb3.jpg) -->
+                  <span class="method-name">testSuccessfulAdminAddAttachment</span>
+                  <span class="parameters">(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attach7.20b, C:\\testfolder\\, gb3.jpg)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attaching7.20b, C:\\testfolder\\, kiar3.jpg)">
+                  </a> <!-- testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attaching7.20b, C:\\testfolder\\, kiar3.jpg) -->
+                  <span class="method-name">testSuccessfulAdminAddAttachment</span>
+                  <span class="parameters">(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attaching7.20b, C:\\testfolder\\, kiar3.jpg)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingDoc7.20b, C:\\testfolder\\, TestCertInput1....)">
+                  </a> <!-- testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingDoc7.20b, C:\\testfolder\\, TestCertInput1....) -->
+                  <span class="method-name">testSuccessfulAdminAddAttachment</span>
+                  <span class="parameters">(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingDoc7.20b, C:\\testfolder\\, TestCertInput1.xlsx)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16C, Dec 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bC.xlsx, 7...)">
+                  </a> <!-- testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16C, Dec 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bC.xlsx, 7...) -->
+                  <span class="method-name">testSuccessfulImportFileToClient</span>
+                  <span class="parameters">(Jn Lee, password1, Client7.20b.16C, Dec 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bC.xlsx, 7.20b.16001, 7.20b.16002)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16B, Nov 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bD.xlsx, 7...)">
+                  </a> <!-- testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16B, Nov 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bD.xlsx, 7...) -->
+                  <span class="method-name">testSuccessfulImportFileToClient</span>
+                  <span class="parameters">(Jn Lee, password1, Client7.20b.16B, Nov 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bD.xlsx, 7.20b.16003, 7.20b.16004)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulLogIn(NewDataEntryUserD3, password1)">
+                  </a> <!-- testSuccessfulLogIn(NewDataEntryUserD3, password1) -->
+                  <span class="method-name">testSuccessfulLogIn</span>
+                  <span class="parameters">(NewDataEntryUserD3, password1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulLogIn(NewClientUserD3, password1)">
+                  </a> <!-- testSuccessfulLogIn(NewClientUserD3, password1) -->
+                  <span class="method-name">testSuccessfulLogIn</span>
+                  <span class="parameters">(NewClientUserD3, password1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulLogOut(NewClientUserD3, password1)">
+                  </a> <!-- testSuccessfulLogOut(NewClientUserD3, password1) -->
                   <span class="method-name">testSuccessfulLogOut</span>
-                  <span class="parameters">(NewClientUserD1, password1)</span>
+                  <span class="parameters">(NewClientUserD3, password1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewAdminUserCreationDBcheck(sysadmin, 123456, Jn Lee, Active, Admin, nothing, 777.123.2222, jnadmin3@admintesting.com, password1...)">
+                  </a> <!-- testSuccessfulNewAdminUserCreationDBcheck(sysadmin, 123456, Jn Lee, Active, Admin, nothing, 777.123.2222, jnadmin3@admintesting.com, password1...) -->
+                  <span class="method-name">testSuccessfulNewAdminUserCreationDBcheck</span>
+                  <span class="parameters">(sysadmin, 123456, Jn Lee, Active, Admin, nothing, 777.123.2222, jnadmin3@admintesting.com, password1, password1, C:\\testfolder\\, money.jpg)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16B, 121-790-1030, 0, 118022 Small Road Dr., Avondale, GA, 23004)">
+                  </a> <!-- testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16B, 121-790-1030, 0, 118022 Small Road Dr., Avondale, GA, 23004) -->
+                  <span class="method-name">testSuccessfulNewClientCreation</span>
+                  <span class="parameters">(Jn Lee, password1, Client7.20b.16B, 121-790-1030, 0, 118022 Small Road Dr., Avondale, GA, 23004)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16A, 771-311-9900, 123, 112022 H Street Dr., Doraville, GA, 30023)">
+                  </a> <!-- testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16A, 771-311-9900, 123, 112022 H Street Dr., Doraville, GA, 30023) -->
+                  <span class="method-name">testSuccessfulNewClientCreation</span>
+                  <span class="parameters">(Jn Lee, password1, Client7.20b.16A, 771-311-9900, 123, 112022 H Street Dr., Doraville, GA, 30023)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16D, 671-328-4440, 4562, 82 H St., Marietta, GA, 30022)">
+                  </a> <!-- testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16D, 671-328-4440, 4562, 82 H St., Marietta, GA, 30022) -->
+                  <span class="method-name">testSuccessfulNewClientCreationDBcheck</span>
+                  <span class="parameters">(Jn Lee, password1, Client7.20b.16D, 671-328-4440, 4562, 82 H St., Marietta, GA, 30022)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16C, 401-118-2220, 1234, 8 Dog Town Dr., Atlanta, GA, 32299)">
+                  </a> <!-- testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16C, 401-118-2220, 1234, 8 Dog Town Dr., Atlanta, GA, 32299) -->
+                  <span class="method-name">testSuccessfulNewClientCreationDBcheck</span>
+                  <span class="parameters">(Jn Lee, password1, Client7.20b.16C, 401-118-2220, 1234, 8 Dog Town Dr., Atlanta, GA, 32299)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewUserCreate(Jn Lee, password1, NewClientUserD3, Active, Client, Client7.20b.16B, 770.330.1111, newclientD3@user....)">
+                  </a> <!-- testSuccessfulNewUserCreate(Jn Lee, password1, NewClientUserD3, Active, Client, Client7.20b.16B, 770.330.1111, newclientD3@user....) -->
+                  <span class="method-name">testSuccessfulNewUserCreate</span>
+                  <span class="parameters">(Jn Lee, password1, NewClientUserD3, Active, Client, Client7.20b.16B, 770.330.1111, newclientD3@user.com, password1, password1, C:\\testfolder\\, toshiya3.jpg)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulNewUserCreate(Jn Lee, password1, NewDataEntryUserD3, Active, Data Entry, nothing, 774.999.3456, newdataentryuserD3...)">
+                  </a> <!-- testSuccessfulNewUserCreate(Jn Lee, password1, NewDataEntryUserD3, Active, Data Entry, nothing, 774.999.3456, newdataentryuserD3...) -->
+                  <span class="method-name">testSuccessfulNewUserCreate</span>
+                  <span class="parameters">(Jn Lee, password1, NewDataEntryUserD3, Active, Data Entry, nothing, 774.999.3456, newdataentryuserD3@testing.com, password1, password1, C:\\testfolder\\, dataentryuser1.jpg)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulSumSheetDownLoadFiref(NewClientUserD3, password1, 7.20b.16003, C:\\testfolder\\SeleniumDownloads, golgo13.PNG)">
+                  </a> <!-- testSuccessfulSumSheetDownLoadFiref(NewClientUserD3, password1, 7.20b.16003, C:\\testfolder\\SeleniumDownloads, golgo13.PNG) -->
+                  <span class="method-name">testSuccessfulSumSheetDownLoadFiref</span>
+                  <span class="parameters">(NewClientUserD3, password1, 7.20b.16003, C:\\testfolder\\SeleniumDownloads, golgo13.PNG)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,32 +528,112 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(25);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSuccessfulLogOut')
+data.setCell(0, 1, 'testSuccessfulAddSaleDates')
 data.setCell(0, 2, 'com.test1.tests.RTestChrome')
-data.setCell(0, 3, 9307);
+data.setCell(0, 3, 220162);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSuccessfulLogIn')
+data.setCell(1, 1, 'testSuccessfulAdminAddAttachment')
 data.setCell(1, 2, 'com.test1.tests.RTestChrome')
-data.setCell(1, 3, 7555);
+data.setCell(1, 3, 48375);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSuccessfulLogIn')
+data.setCell(2, 1, 'testSuccessfulAdminAddAttachment')
 data.setCell(2, 2, 'com.test1.tests.RTestChrome')
-data.setCell(2, 3, 6891);
+data.setCell(2, 3, 46696);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSuccessfulLogIn')
+data.setCell(3, 1, 'testSuccessfulAdminAddAttachment')
 data.setCell(3, 2, 'com.test1.tests.RTestChrome')
-data.setCell(3, 3, 6549);
+data.setCell(3, 3, 46438);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSuccessfulLogIn')
+data.setCell(4, 1, 'testSuccessfulAdminAddAttachment')
 data.setCell(4, 2, 'com.test1.tests.RTestChrome')
-data.setCell(4, 3, 5906);
+data.setCell(4, 3, 46278);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSuccessfulImportFileToClient')
+data.setCell(5, 2, 'com.test1.tests.RTestChrome')
+data.setCell(5, 3, 35053);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSuccessfulImportFileToClient')
+data.setCell(6, 2, 'com.test1.tests.RTestChrome')
+data.setCell(6, 3, 34586);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSuccessfulAddAttachmentDBcheck')
+data.setCell(7, 2, 'com.test1.tests.RTestChrome')
+data.setCell(7, 3, 34314);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testSuccessfulAddAttachmentDBcheck')
+data.setCell(8, 2, 'com.test1.tests.RTestChrome')
+data.setCell(8, 3, 34200);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSuccessfulAddAttachmentDBcheck')
+data.setCell(9, 2, 'com.test1.tests.RTestChrome')
+data.setCell(9, 3, 34122);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testSuccessfulNewAdminUserCreationDBcheck')
+data.setCell(10, 2, 'com.test1.tests.RTestChrome')
+data.setCell(10, 3, 33576);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSuccessfulNewUserCreate')
+data.setCell(11, 2, 'com.test1.tests.RTestChrome')
+data.setCell(11, 3, 31341);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSuccessfulNewUserCreate')
+data.setCell(12, 2, 'com.test1.tests.RTestChrome')
+data.setCell(12, 3, 30219);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSuccessfulNewUserCreationDBcheck')
+data.setCell(13, 2, 'com.test1.tests.RTestChrome')
+data.setCell(13, 3, 27214);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSuccessfulNewUserCreationDBcheck')
+data.setCell(14, 2, 'com.test1.tests.RTestChrome')
+data.setCell(14, 3, 27016);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testSuccessfulNewClientCreation')
+data.setCell(15, 2, 'com.test1.tests.RTestChrome')
+data.setCell(15, 3, 24719);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testSuccessfulNewClientCreation')
+data.setCell(16, 2, 'com.test1.tests.RTestChrome')
+data.setCell(16, 3, 24718);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testSuccessfulNewClientCreationDBcheck')
+data.setCell(17, 2, 'com.test1.tests.RTestChrome')
+data.setCell(17, 3, 22875);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testSuccessfulNewClientCreationDBcheck')
+data.setCell(18, 2, 'com.test1.tests.RTestChrome')
+data.setCell(18, 3, 22478);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testSuccessfulSumSheetDownLoadFiref')
+data.setCell(19, 2, 'com.test1.tests.RTestChrome')
+data.setCell(19, 3, 13524);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testSuccessfulLogOut')
+data.setCell(20, 2, 'com.test1.tests.RTestChrome')
+data.setCell(20, 3, 8787);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testSuccessfulLogIn')
+data.setCell(21, 2, 'com.test1.tests.RTestChrome')
+data.setCell(21, 3, 6329);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testSuccessfulLogIn')
+data.setCell(22, 2, 'com.test1.tests.RTestChrome')
+data.setCell(22, 3, 5882);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testSuccessfulLogIn')
+data.setCell(23, 2, 'com.test1.tests.RTestChrome')
+data.setCell(23, 3, 5587);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testSuccessfulLogIn')
+data.setCell(24, 2, 'com.test1.tests.RTestChrome')
+data.setCell(24, 3, 5555);
 window.suiteTableData['Ant_suite']= { tableData: data, tableDiv: 'times-div-Ant_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 14 minutes</span>
               <div id="times-div-Ant_suite">
               </div> <!-- times-div-Ant_suite -->
             </div> <!-- times-div -->
@@ -293,64 +666,318 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">834 ms</span>
+                <span class="method-start">788 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSuccessfulLogOut(NewClientUserD1, password1)</span>
-                <span class="method-start">9655 ms</span>
+                <span class="method-name">testSuccessfulNewAdminUserCreationDBcheck(sysadmin, 123456, Jn Lee, Active, Admin, nothing, 777.123.2222, jnadmin3@admintesting.com, password1...)</span>
+                <span class="method-start">7242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">18963 ms</span>
+                <span class="method-start">40819 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">23548 ms</span>
+                <span class="method-start">44492 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSuccessfulLogIn(NewParaUserD1, password1)</span>
-                <span class="method-start">31426 ms</span>
+                <span class="method-name">testSuccessfulAddSaleDates(sysadmin, 123456, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18)</span>
+                <span class="method-start">48817 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">37975 ms</span>
+                <span class="method-start">268979 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">41459 ms</span>
+                <span class="method-start">272627 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSuccessfulLogIn(NewAdminUserD1, password1)</span>
-                <span class="method-start">45919 ms</span>
+                <span class="method-name">testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16C, 401-118-2220, 1234, 8 Dog Town Dr., Atlanta, GA, 32299)</span>
+                <span class="method-start">277987 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">53475 ms</span>
+                <span class="method-start">300862 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">56881 ms</span>
+                <span class="method-start">304202 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSuccessfulLogIn(NewClientUserD1, password1)</span>
-                <span class="method-start">61260 ms</span>
+                <span class="method-name">testSuccessfulNewClientCreationDBcheck(Jn Lee, password1, Client7.20b.16D, 671-328-4440, 4562, 82 H St., Marietta, GA, 30022)</span>
+                <span class="method-start">307983 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">67166 ms</span>
+                <span class="method-start">330461 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">70544 ms</span>
+                <span class="method-start">333935 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSuccessfulLogIn(NewDataEntryUserD1, password1)</span>
-                <span class="method-start">74620 ms</span>
+                <span class="method-name">testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16A, 771-311-9900, 123, 112022 H Street Dr., Doraville, GA, 30023)</span>
+                <span class="method-start">337931 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">81511 ms</span>
+                <span class="method-start">362649 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">366019 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulNewClientCreation(Jn Lee, password1, Client7.20b.16B, 121-790-1030, 0, 118022 Small Road Dr., Avondale, GA, 23004)</span>
+                <span class="method-start">370084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">394803 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">398232 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16B, Nov 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bD.xlsx, 7...)</span>
+                <span class="method-start">402581 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">437634 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">441054 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulImportFileToClient(Jn Lee, password1, Client7.20b.16C, Dec 18 2016, C:\\testfolder\\uploadfiles\\, Import7.20bC.xlsx, 7...)</span>
+                <span class="method-start">445269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">479855 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">483262 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingDoc7.20b, C:\\testfolder\\, TestCertInput1....)</span>
+                <span class="method-start">488796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">537171 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">540601 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, addingAttach7.20b, C:\\testfolder\\, rock1.jpg)</span>
+                <span class="method-start">544952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">591230 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">594616 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attach7.20b, C:\\testfolder\\, gb3.jpg)</span>
+                <span class="method-start">598278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">644716 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">648112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulAdminAddAttachment(Client7.20b.16C, Json Lee, password1, 7.20b.16001, attaching7.20b, C:\\testfolder\\, kiar3.jpg)</span>
+                <span class="method-start">653545 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">700241 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">703688 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulAddAttachmentDBcheck(Client7.20b.16C, Json Lee, password1, 7.20b.16002, addingAttachm7.20b, C:\\testfolder\\, gb1.jpg)</span>
+                <span class="method-start">708089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">742403 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">745843 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16003, attachDocument7.20b, C:\\testfolder\\, golgo13.PN...)</span>
+                <span class="method-start">750465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">784665 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">788014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulAddAttachmentDBcheck(Client7.20b.16B, Json Lee, password1, 7.20b.16004, addRockman7.20b, C:\\testfolder\\, rock1.jpg)</span>
+                <span class="method-start">792599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">826721 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">830145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewParaUserD2, Active, Paralegal, nothing, 771.111.2222, parauserd3@testing.com, ...)</span>
+                <span class="method-start">834646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">861862 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">865228 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSuccessfulNewUserCreationDBcheck(Jn Lee, password1, NewAdminUserD2, Active, Admin, nothing, 402.222.3333, newadminuserd3@testing.com,...)</span>
+                <span class="method-start">869587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">896603 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">900059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulNewUserCreate(Jn Lee, password1, NewClientUserD3, Active, Client, Client7.20b.16B, 770.330.1111, newclientD3@user....)</span>
+                <span class="method-start">904412 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">935753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">939245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulNewUserCreate(Jn Lee, password1, NewDataEntryUserD3, Active, Data Entry, nothing, 774.999.3456, newdataentryuserD3...)</span>
+                <span class="method-start">944506 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">974725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">978128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSuccessfulLogIn(NewParaUserD3, password1)</span>
+                <span class="method-start">982439 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">987994 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">991391 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSuccessfulLogIn(NewAdminUserD3, password1)</span>
+                <span class="method-start">996160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1001747 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1005072 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulLogIn(NewClientUserD3, password1)</span>
+                <span class="method-start">1009279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1015161 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1018528 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulLogIn(NewDataEntryUserD3, password1)</span>
+                <span class="method-start">1022702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1029031 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1032470 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulLogOut(NewClientUserD3, password1)</span>
+                <span class="method-start">1036670 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1045457 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1048810 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulSumSheetDownLoadFiref(NewClientUserD3, password1, 7.20b.16003, C:\\testfolder\\SeleniumDownloads, golgo13.PNG)</span>
+                <span class="method-start">1052914 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1066438 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">1069884 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

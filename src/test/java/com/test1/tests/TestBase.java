@@ -104,12 +104,21 @@ public class TestBase
 		 
 	  }
 	 
-	 @AfterSuite
+	 @AfterSuite //cannot user data provider in AfterSuite - having to hard code the recipient email
+	 //and report path ** research and find a way to pass in the emails and report paths as string
+	 //** doesn't work if test suite is ran using ant *** research and find solution
 	 public void afterSuite() throws Exception
 	 {
 		 
 		//Send emailable report email after test suite has been ran
 		SendMail.execute("emailable-report.html");
+		
+		Thread.sleep(2000);
+		
+		//Send emailable ant_report after test suit has been ran
+		SendMail.emailAntReport("emailable-report.html");
+		
+		
 	 }
 	 
 	

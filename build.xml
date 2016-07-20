@@ -117,17 +117,19 @@
 	</mail>
 	</target>  -->
 	
-	
-	<target description="Generates and send test reports" name="sendMail">
+	<!-- depends="run" -->
+	<target description="Generates and send test reports" name="sendMail" >
 	  <mail mailhost="smtp.gmail.com" 
 	  	mailport="465"   
 	  	subject="RTest Results Ant Report"
-	  	ssl="false"
+	  	ssl="true"
 	  	user="syntester0077@gmail.com"
 	  	password="myp@ssw0rd">
 	     <from address="syntester0077@gmail.com"></from>
 	     <replyto address="syntester0077@gmail.com"></replyto>
 	     <to address="jason.lee@soltech.net"></to>
+	  	 <cc address = "jeff.reed@soltech.net"></cc>
+	  	 <bcc address = "synhlee@yahoo.com"></bcc>
 	     <message>The Ant Regression Test has completed</message>
 	     <attachments>
 	       <fileset dir="${test.reports}">
