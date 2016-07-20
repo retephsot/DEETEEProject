@@ -7,3 +7,13 @@ Required jar files (The mentioned jar files below need to be added to the build 
 * Selenium-server-standalone-2.53.0.jar
 * sqljdbc4.jar
 * mxlbeans-2.6.0.jar
+* activation.jar
+* additionnal.jar
+* javamail-connector-4.0
+* mail.jar
+  
+The following jar files were also placed in the apache-ant's lib folder
+* activation.jar
+* additionnal.jar
+* javamail-connector-4.0
+* mail.jar
