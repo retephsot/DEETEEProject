@@ -11,6 +11,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -18,6 +19,7 @@ import org.testng.annotations.DataProvider;
 //input the correct "entry point class" below in this case "DefaultLandingPage"
 import com.test1.pages.LogInPage;
 import com.test1.util.DataDrivenHelper;
+import com.test1.util.SendMail;
 import com.test1.util.WebDriverHelper;
 
 public class TestBase 
@@ -98,9 +100,17 @@ public class TestBase
 		 WebDriverHelper.quitDriver(driver);
 		 
 		 Thread.sleep(2000);
-		 // enable below once sendreport method has been created
-		 //WebDriverHelper.sendreport();
+
 		 
 	  }
+	 
+	 @AfterSuite
+	 public void afterSuite() throws Exception
+	 {
+		 
+		//Send emailable report email after test suite has been ran
+		SendMail.execute("emailable-report.html");
+	 }
+	 
 	
 }

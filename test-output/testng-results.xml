@@ -1,101 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="227665" started-at="2016-07-18T14:57:52Z" finished-at="2016-07-18T15:01:40Z">
+  <suite name="Default suite" duration-ms="59346" started-at="2016-07-20T01:25:23Z" finished-at="2016-07-20T01:26:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="227665" started-at="2016-07-18T14:57:52Z" finished-at="2016-07-18T15:01:40Z">
-      <class name="com.test1.tests.TestSuccessfulAddSaleDates">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="beforSuite" is-config="true" duration-ms="12" started-at="2016-07-18T10:57:52Z" finished-at="2016-07-18T10:57:52Z">
+    <test name="Default test" duration-ms="59346" started-at="2016-07-20T01:25:23Z" finished-at="2016-07-20T01:26:22Z">
+      <class name="com.test1.tests.RTestChrome">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="beforSuite" is-config="true" duration-ms="13" started-at="2016-07-19T21:25:23Z" finished-at="2016-07-19T21:25:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="beforeMethod" is-config="true" duration-ms="4680" started-at="2016-07-18T10:57:53Z" finished-at="2016-07-18T10:57:58Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="beforeMethod" is-config="true" duration-ms="4576" started-at="2016-07-19T21:25:24Z" finished-at="2016-07-19T21:25:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulAddSaleDates(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="testSuccessfulAddSaleDates" duration-ms="219203" started-at="2016-07-18T10:57:58Z" data-provider="dataProvider" finished-at="2016-07-18T11:01:37Z">
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="testSuccessfulLogIn" duration-ms="8979" started-at="2016-07-19T21:25:28Z" data-provider="dataProvider" finished-at="2016-07-19T21:25:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[sysadmin]]>
+                <![CDATA[NewParaUserD1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[20]]>
+                <![CDATA[password1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulAddSaleDates -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.TestSuccessfulAddSaleDates@7006c658]" name="afterMethod" is-config="true" duration-ms="3137" started-at="2016-07-18T11:01:37Z" finished-at="2016-07-18T11:01:40Z">
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="afterMethod" is-config="true" duration-ms="3017" started-at="2016-07-19T21:25:37Z" finished-at="2016-07-19T21:25:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.test1.tests.TestSuccessfulAddSaleDates -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="beforeMethod" is-config="true" duration-ms="3516" started-at="2016-07-19T21:25:40Z" finished-at="2016-07-19T21:25:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="testSuccessfulLogIn" duration-ms="9041" started-at="2016-07-19T21:25:44Z" data-provider="dataProvider" finished-at="2016-07-19T21:25:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewAdminUserD1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="afterMethod" is-config="true" duration-ms="2877" started-at="2016-07-19T21:25:53Z" finished-at="2016-07-19T21:25:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="beforeMethod" is-config="true" duration-ms="3747" started-at="2016-07-19T21:25:56Z" finished-at="2016-07-19T21:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="testSuccessfulLogIn" duration-ms="6328" started-at="2016-07-19T21:25:59Z" data-provider="dataProvider" finished-at="2016-07-19T21:26:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewClientUserD1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="afterMethod" is-config="true" duration-ms="2836" started-at="2016-07-19T21:26:06Z" finished-at="2016-07-19T21:26:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="beforeMethod" is-config="true" duration-ms="3684" started-at="2016-07-19T21:26:09Z" finished-at="2016-07-19T21:26:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessfulLogIn(java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="testSuccessfulLogIn" duration-ms="7060" started-at="2016-07-19T21:26:12Z" data-provider="dataProvider" finished-at="2016-07-19T21:26:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewDataEntryUserD1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="afterMethod" is-config="true" duration-ms="2941" started-at="2016-07-19T21:26:19Z" finished-at="2016-07-19T21:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.test1.tests.RTestChrome@591f989e]" name="afterSuite" is-config="true" duration-ms="1603" started-at="2016-07-19T21:26:22Z" finished-at="2016-07-19T21:26:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.test1.tests.RTestChrome -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
