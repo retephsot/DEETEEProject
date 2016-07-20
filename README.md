@@ -17,3 +17,4 @@ The following jar files were also placed in the apache-ant's lib folder
 * additionnal.jar
 * javamail-connector-4.0
 * mail.jar
+* java-mail-1.4.4
